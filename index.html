@@ -299,69 +299,6 @@ footer{background:var(--nv);padding:64px 0 0}
 .vqcard-text{font-family:"Tiro Devanagari Hindi",serif;font-size:13px;color:var(--t2);line-height:1.75}
 @media(max-width:768px){.values-quote-grid{grid-template-columns:1fr}}
 
-/* ADMIN DASHBOARD */
-.admin-overlay{position:fixed;inset:0;z-index:2000;background:rgba(15,30,60,.97);display:none;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
-.admin-overlay.show{display:flex}
-.admin-login-box{background:#fff;border-radius:20px;padding:44px;width:min(420px,90vw);box-shadow:0 32px 80px rgba(0,0,0,.4)}
-.admin-login-box h2{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--md);margin-bottom:6px}
-.admin-login-box p{font-size:13px;color:var(--t3);margin-bottom:28px}
-.admin-err{background:rgba(196,57,45,.08);border:1px solid rgba(196,57,45,.3);border-radius:8px;padding:10px 14px;font-size:13px;color:#c4392d;margin-bottom:16px;display:none}
-.admin-input-wrap{position:relative;margin-bottom:14px}
-.admin-input{width:100%;padding:12px 44px 12px 16px;border:1.5px solid var(--bd);border-radius:8px;font-size:14px;outline:none;transition:var(--tr)}
-.admin-input:focus{border-color:var(--m);box-shadow:0 0 0 3px rgba(123,29,29,.07)}
-.admin-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);cursor:pointer;font-size:16px;color:var(--t3)}
-.admin-btn{width:100%;background:var(--m);color:#fff;padding:13px;border-radius:8px;font-size:15px;font-weight:700;border:none;cursor:pointer;font-family:inherit;transition:var(--tr);margin-top:4px}
-.admin-btn:hover{background:var(--md)}
-.admin-cancel{display:block;text-align:center;margin-top:14px;font-size:13px;color:var(--t3);cursor:pointer;transition:var(--tr)}
-.admin-cancel:hover{color:var(--m)}
-
-/* ADMIN PANEL */
-.admin-panel{position:fixed;inset:0;z-index:1999;background:#f0f4f8;display:none;flex-direction:column;overflow:hidden}
-.admin-panel.show{display:flex}
-.admin-header{background:var(--md);color:#fff;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.admin-header h2{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:700}
-.admin-header-right{display:flex;align-items:center;gap:12px}
-.admin-user-badge{background:rgba(255,255,255,.12);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600}
-.admin-logout{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;padding:7px 16px;border-radius:7px;font-size:13px;cursor:pointer;font-family:inherit;transition:var(--tr)}
-.admin-logout:hover{background:rgba(255,255,255,.25)}
-.admin-body{display:flex;flex:1;overflow:hidden}
-.admin-sidebar{width:220px;background:var(--nv);padding:20px 0;flex-shrink:0;overflow-y:auto}
-.admin-nav-item{display:flex;align-items:center;gap:10px;padding:13px 22px;font-size:13px;font-weight:600;color:rgba(255,255,255,.65);cursor:pointer;transition:var(--tr);border-left:3px solid transparent}
-.admin-nav-item:hover,.admin-nav-item.on{background:rgba(255,255,255,.07);color:#fff;border-left-color:var(--g)}
-.admin-nav-item .nav-ic{font-size:16px}
-.admin-content{flex:1;overflow-y:auto;padding:28px}
-.admin-tab{display:none}.admin-tab.on{display:block}
-.admin-section-title{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--md);margin-bottom:6px}
-.admin-section-sub{font-size:13px;color:var(--t3);margin-bottom:24px}
-.admin-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
-.admin-stat-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.admin-stat-num{font-family:"Cormorant Garamond",serif;font-size:36px;font-weight:700;color:var(--m);line-height:1}
-.admin-stat-lbl{font-size:12px;color:var(--t3);margin-top:4px;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
-.admin-card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:20px}
-.admin-card h3{font-size:16px;font-weight:700;color:var(--md);margin-bottom:16px}
-.admin-table{width:100%;border-collapse:collapse;font-size:13px}
-.admin-table th{background:var(--cr2);padding:10px 16px;text-align:left;font-weight:700;color:var(--md);border-bottom:2px solid var(--bd)}
-.admin-table td{padding:10px 16px;border-bottom:1px solid var(--bd);color:var(--t2)}
-.admin-table tr:hover td{background:rgba(123,29,29,.02)}
-.admin-badge-new{background:rgba(45,110,45,.1);color:#1d6e32;font-size:11px;font-weight:700;padding:3px 8px;border-radius:100px}
-.admin-badge-read{background:rgba(123,29,29,.08);color:var(--m);font-size:11px;font-weight:700;padding:3px 8px;border-radius:100px}
-.admin-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.admin-fg{margin-bottom:0}
-.admin-fl{display:block;font-size:11px;font-weight:700;color:var(--md);letter-spacing:.5px;text-transform:uppercase;margin-bottom:5px}
-.admin-fi{width:100%;padding:10px 14px;border:1.5px solid var(--bd);border-radius:8px;font-size:13px;outline:none;transition:var(--tr);font-family:inherit}
-.admin-fi:focus{border-color:var(--m);box-shadow:0 0 0 3px rgba(123,29,29,.07)}
-.admin-submit-btn{background:var(--m);color:#fff;padding:10px 24px;border-radius:8px;font-size:14px;font-weight:700;border:none;cursor:pointer;font-family:inherit;transition:var(--tr)}
-.admin-submit-btn:hover{background:var(--md)}
-.admin-action-btn{padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;border:none;transition:var(--tr)}
-.btn-view{background:rgba(26,39,68,.1);color:var(--nv)}.btn-del{background:rgba(196,57,45,.1);color:#c4392d}
-.btn-approve{background:rgba(45,110,45,.1);color:#1d6e32}
-.upload-area{border:2px dashed var(--bd);border-radius:12px;padding:32px;text-align:center;cursor:pointer;transition:var(--tr)}
-.upload-area:hover{border-color:var(--m);background:rgba(123,29,29,.02)}
-.upload-area p{font-size:14px;color:var(--t3);margin-top:8px}
-.notice-form{display:grid;gap:12px}
-.admin-success-toast{position:fixed;bottom:28px;right:28px;background:#2d6e2d;color:#fff;padding:14px 24px;border-radius:10px;font-size:14px;font-weight:600;z-index:3000;transform:translateY(100px);opacity:0;transition:all .4s;pointer-events:none}
-.admin-success-toast.show{transform:translateY(0);opacity:1}
-@media(max-width:768px){.admin-stats-row{grid-template-columns:1fr 1fr}.admin-form-grid{grid-template-columns:1fr}.admin-sidebar{width:180px}.admin-nav-item{padding:11px 14px;font-size:12px}}
 
 </style>
 </head>
@@ -823,11 +760,11 @@ footer{background:var(--nv);padding:64px 0 0}
       <p class="fsub2 en">Fill the form and we'll call you back within 24 hours.</p>
       <div id="admFrm">
         <div class="fr2">
-          <div class="fg"><label class="fl hi">अभिभावक का नाम *</label><label class="fl en">Parent's Name *</label><input class="fi" type="text" id="pN" placeholder="Full name / पूरा नाम"></div>
-          <div class="fg"><label class="fl hi">बच्चे का नाम *</label><label class="fl en">Child's Name *</label><input class="fi" type="text" id="cN" placeholder="Child's name"></div>
+          <div class="fg"><label class="fl hi">अभिभावक का नाम *</label><label class="fl en">Parent's Name *</label><input class="fi" type="text" id="pN" maxlength="80" autocomplete="name" placeholder="Full name / पूरा नाम"></div>
+          <div class="fg"><label class="fl hi">बच्चे का नाम *</label><label class="fl en">Child's Name *</label><input class="fi" type="text" id="cN" maxlength="80" placeholder="Child's name"></div>
         </div>
         <div class="fr2">
-          <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" id="ph" placeholder="+91 XXXXXXXXXX"></div>
+          <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" id="ph" maxlength="16" inputmode="tel" autocomplete="tel" placeholder="+91 XXXXXXXXXX"></div>
           <div class="fg"><label class="fl hi">कक्षा *</label><label class="fl en">Class *</label>
             <select class="fi" id="cl"><option value="">-- Select / चुनें --</option>
               <option>Play School / Nursery</option><option>LKG</option><option>UKG</option>
@@ -837,10 +774,10 @@ footer{background:var(--nv);padding:64px 0 0}
             </select>
           </div>
         </div>
-        <div class="fg"><label class="fl hi">गाँव / क्षेत्र *</label><label class="fl en">Village / Area *</label><input class="fi" type="text" id="vl" placeholder="Your village / आपका गाँव"></div>
+        <div class="fg"><label class="fl hi">गाँव / क्षेत्र *</label><label class="fl en">Village / Area *</label><input class="fi" type="text" id="vl" maxlength="80" placeholder="Your village / आपका गाँव"></div>
         <div class="fg"><label class="fl hi">जन्म तिथि</label><label class="fl en">Date of Birth</label><input class="fi" type="date" id="db"></div>
-        <div class="fg"><label class="fl hi">कोई प्रश्न</label><label class="fl en">Any Query</label><textarea class="fi" rows="3" placeholder="Any question..." style="resize:none"></textarea></div>
-        <button class="fsbtn" onclick="submitAdm()"><span class="hi">नामांकन पूछताछ भेजें →</span><span class="en">Submit Inquiry — Get Callback →</span></button>
+        <div class="fg"><label class="fl hi">कोई प्रश्न</label><label class="fl en">Any Query</label><textarea class="fi" id="aq" rows="3" maxlength="1000" placeholder="Any question..." style="resize:none"></textarea></div><input type="text" name="_honey" id="admHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <button class="fsbtn" id="abtn" onclick="submitAdm(this)"><span class="hi">नामांकन पूछताछ भेजें →</span><span class="en">Submit Inquiry — Get Callback →</span></button>
         <p class="fnote"><strong>+91-9006308822 / +91-8789724803</strong></p>
       </div>
       <div class="fok" id="admOk"><div style="font-size:36px;margin-bottom:12px">✅</div>
@@ -1084,11 +1021,11 @@ footer{background:var(--nv);padding:64px 0 0}
     <div class="fbx fu">
       <h2 class="ftit hi">संदेश भेजें</h2><h2 class="ftit en">Send a Message</h2>
       <p class="fsub2 hi">कोई भी प्रश्न हो, हम सहायता के लिए तैयार हैं।</p><p class="fsub2 en">Have a question? We'd love to hear from you.</p>
-      <div class="fg"><label class="fl hi">आपका नाम *</label><label class="fl en">Your Name *</label><input class="fi" type="text" placeholder="Full name / पूरा नाम"></div>
-      <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" placeholder="+91 XXXXXXXXXX"></div>
-      <div class="fg"><label class="fl">Email</label><input class="fi" type="email" placeholder="your@email.com"></div>
+      <div class="fg"><label class="fl hi">आपका नाम *</label><label class="fl en">Your Name *</label><input class="fi" type="text" id="ctN" maxlength="80" autocomplete="name" placeholder="Full name / पूरा नाम"></div>
+      <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" id="ctP" maxlength="16" inputmode="tel" autocomplete="tel" placeholder="+91 XXXXXXXXXX"></div>
+      <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="ctE" maxlength="120" autocomplete="email" placeholder="your@email.com"></div>
       <div class="fg"><label class="fl hi">विषय *</label><label class="fl en">Subject *</label>
-        <select class="fi">
+        <select class="fi" id="ctS">
           <option value="">-- Select / चुनें --</option>
           <option>Admission Inquiry / नामांकन पूछताछ</option>
           <option>Fee Structure / शुल्क जानकारी</option>
@@ -1097,7 +1034,7 @@ footer{background:var(--nv);padding:64px 0 0}
           <option>Feedback / प्रतिक्रिया</option>
         </select>
       </div>
-      <div class="fg"><label class="fl hi">संदेश *</label><label class="fl en">Message *</label><textarea class="fi" rows="4" placeholder="आपका संदेश / Your message..." style="resize:none"></textarea></div>
+      <div class="fg"><label class="fl hi">संदेश *</label><label class="fl en">Message *</label><textarea class="fi" id="ctM" rows="4" maxlength="2000" placeholder="आपका संदेश / Your message..." style="resize:none"></textarea></div><input type="text" name="_honey" id="ctHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <button class="fsbtn" id="cbtn" onclick="submitContact(this)"><span class="hi">संदेश भेजें →</span><span class="en">Send Message →</span></button>
       <div style="display:flex;gap:10px;margin-top:14px">
         <a href="tel:+919006308822" class="btn bom bsm" style="flex:1;justify-content:center">📞 9006308822</a>
@@ -1137,7 +1074,6 @@ footer{background:var(--nv);padding:64px 0 0}
         <a class="flink" onclick="go('notices')"><span class="hi">सूचनाएं</span><span class="en">Notices</span></a>
         <a class="flink" onclick="go('blog')"><span class="hi">ब्लॉग</span><span class="en">Blog</span></a>
         <a class="flink" onclick="go('contact')"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
-              <a class="flink" onclick="openAdmin()" style="color:rgba(255,255,255,.4);font-size:11px;margin-top:8px">🔐 Admin Login</a>
       </div>
       <div class="fc4">
         <h4 class="hi">अकादमिक</h4><h4 class="en">Academics</h4>
@@ -1175,267 +1111,6 @@ footer{background:var(--nv);padding:64px 0 0}
 </a>
 
 
-<!-- ============ ADMIN LOGIN OVERLAY ============ -->
-<div class="admin-overlay" id="adminOverlay">
-  <div class="admin-login-box">
-    <div style="text-align:center;margin-bottom:20px">
-      <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--m),var(--mm));display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 12px">🔐</div>
-      <h2>Admin Login</h2>
-      <p>अनुपम तक्षशिला विद्यापीठ — Staff Portal</p>
-    </div>
-    <div class="admin-err" id="adminErr">❌ गलत Username या Password। कृपया पुनः प्रयास करें।</div>
-    <div class="admin-fg"><label class="admin-fl">Username</label><input class="admin-input" type="text" id="adminUser" placeholder="Enter username" autocomplete="username"></div>
-    <div class="admin-input-wrap" style="margin-top:12px">
-      <label class="admin-fl">Password</label>
-      <input class="admin-input" type="password" id="adminPass" placeholder="Enter password" autocomplete="current-password" onkeypress="if(event.key==='Enter')doLogin()">
-      <span class="admin-eye" onclick="togglePw()" id="eyeIcon">👁️</span>
-    </div>
-    <button class="admin-btn" onclick="doLogin()">🔓 Login to Admin Panel</button>
-    <a class="admin-cancel" onclick="document.getElementById('adminOverlay').classList.remove('show')">← Cancel / वापस जाएं</a>
-  </div>
-</div>
-
-<!-- ============ ADMIN PANEL ============ -->
-<div class="admin-panel" id="adminPanel">
-  <div class="admin-header">
-    <div style="display:flex;align-items:center;gap:14px">
-      <span style="font-size:22px">🏫</span>
-      <h2>ATV Admin Dashboard — Nirmali</h2>
-    </div>
-    <div class="admin-header-right">
-      <div class="admin-user-badge" id="adminUserBadge">👤 Admin</div>
-      <button class="admin-logout" onclick="doLogout()">🚪 Logout</button>
-    </div>
-  </div>
-  <div class="admin-body">
-    <div class="admin-sidebar">
-      <div class="admin-nav-item on" onclick="switchAdminTab('dashboard',this)"><span class="nav-ic">📊</span> Dashboard</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('admissions',this)"><span class="nav-ic">📋</span> Admissions</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('notices',this)"><span class="nav-ic">📢</span> Notices</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('gallery',this)"><span class="nav-ic">🖼️</span> Gallery</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('contacts',this)"><span class="nav-ic">📞</span> Contact Msgs</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('teachers',this)"><span class="nav-ic">👨‍🏫</span> Teachers</div>
-      <div class="admin-nav-item" onclick="switchAdminTab('settings',this)"><span class="nav-ic">⚙️</span> Settings</div>
-    </div>
-    <div class="admin-content">
-
-      <!-- DASHBOARD TAB -->
-      <div class="admin-tab on" id="tab-dashboard">
-        <div class="admin-section-title">Dashboard Overview</div>
-        <div class="admin-section-sub">अनुपम तक्षशिला विद्यापीठ — Administration Panel 2026-27</div>
-        <div class="admin-stats-row">
-          <div class="admin-stat-card"><div class="admin-stat-num">12</div><div class="admin-stat-lbl">New Inquiries</div></div>
-          <div class="admin-stat-card"><div class="admin-stat-num">100+</div><div class="admin-stat-lbl">Students Enrolled</div></div>
-          <div class="admin-stat-card"><div class="admin-stat-num">5</div><div class="admin-stat-lbl">Active Notices</div></div>
-          <div class="admin-stat-card"><div class="admin-stat-num">8</div><div class="admin-stat-lbl">Faculty Members</div></div>
-        </div>
-        <div class="admin-card">
-          <h3>📊 Recent Activity</h3>
-          <table class="admin-table">
-            <thead><tr><th>Date</th><th>Activity</th><th>By</th><th>Status</th></tr></thead>
-            <tbody>
-              <tr><td>Today</td><td>New admission inquiry from Nirmali</td><td>System</td><td><span class="admin-badge-new">New</span></td></tr>
-              <tr><td>Yesterday</td><td>Notice published: Exam Schedule 2025-26</td><td>Admin</td><td><span class="admin-badge-read">Published</span></td></tr>
-              <tr><td>2 days ago</td><td>Gallery updated — Olympiad photos</td><td>Admin</td><td><span class="admin-badge-read">Done</span></td></tr>
-              <tr><td>3 days ago</td><td>New contact message from parent</td><td>System</td><td><span class="admin-badge-new">Unread</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
-          <div class="admin-card">
-            <h3>⚡ Quick Actions</h3>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <button class="admin-submit-btn" style="width:100%;text-align:left" onclick="switchAdminTab('notices',document.querySelector('.admin-nav-item:nth-child(3)'))">📢 Add New Notice</button>
-              <button class="admin-submit-btn" style="width:100%;text-align:left;background:var(--nvm)" onclick="switchAdminTab('admissions',document.querySelector('.admin-nav-item:nth-child(2)'))">📋 View Admission Inquiries</button>
-              <button class="admin-submit-btn" style="width:100%;text-align:left;background:var(--gd)" onclick="switchAdminTab('gallery',document.querySelector('.admin-nav-item:nth-child(4)'))">🖼️ Upload Gallery Photos</button>
-            </div>
-          </div>
-          <div class="admin-card">
-            <h3>📅 Academic Calendar 2026-27</h3>
-            <div style="display:flex;flex-direction:column;gap:8px;font-size:13px">
-              <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd)"><span style="color:var(--t3)">Term I Begins</span><span style="font-weight:700">April 1, 2026</span></div>
-              <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd)"><span style="color:var(--t3)">Mid-Term Exam</span><span style="font-weight:700">July 2026</span></div>
-              <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd)"><span style="color:var(--t3)">Term II Begins</span><span style="font-weight:700">Oct 1, 2026</span></div>
-              <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--t3)">Annual Exam</span><span style="font-weight:700">Jan–Feb 2027</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ADMISSIONS TAB -->
-      <div class="admin-tab" id="tab-admissions">
-        <div class="admin-section-title">Admission Inquiries</div>
-        <div class="admin-section-sub">सभी प्रवेश पूछताछ — Session 2026-27</div>
-        <div class="admin-card">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-            <h3 style="margin:0">Recent Inquiries</h3>
-            <button class="admin-submit-btn bsm" onclick="exportCSV()">📥 Export CSV</button>
-          </div>
-          <table class="admin-table">
-            <thead><tr><th>#</th><th>Parent Name</th><th>Child Name</th><th>Class</th><th>Phone</th><th>Village</th><th>Date</th><th>Action</th></tr></thead>
-            <tbody id="admissionTableBody">
-              <tr><td>1</td><td>Ramesh Kumar Singh</td><td>Arjun Singh</td><td>Class V</td><td>+91-9876543210</td><td>Nirmali</td><td>Apr 1, 2026</td><td><button class="admin-action-btn btn-approve">✓ Confirm</button> <button class="admin-action-btn btn-del">✗</button></td></tr>
-              <tr><td>2</td><td>Sunita Devi</td><td>Priya Kumari</td><td>LKG</td><td>+91-8765432109</td><td>Madhwa</td><td>Mar 30, 2026</td><td><button class="admin-action-btn btn-approve">✓ Confirm</button> <button class="admin-action-btn btn-del">✗</button></td></tr>
-              <tr><td>3</td><td>Arvind Mandal</td><td>Rohan Mandal</td><td>Class VI</td><td>+91-7654321098</td><td>Basantpur</td><td>Mar 28, 2026</td><td><button class="admin-action-btn btn-approve">✓ Confirm</button> <button class="admin-action-btn btn-del">✗</button></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="admin-card">
-          <h3>➕ Add Offline Inquiry</h3>
-          <div class="admin-form-grid">
-            <div class="admin-fg"><label class="admin-fl">Parent Name *</label><input class="admin-fi" type="text" placeholder="Parent's full name"></div>
-            <div class="admin-fg"><label class="admin-fl">Child Name *</label><input class="admin-fi" type="text" placeholder="Child's full name"></div>
-            <div class="admin-fg"><label class="admin-fl">Phone *</label><input class="admin-fi" type="tel" placeholder="+91 XXXXXXXXXX"></div>
-            <div class="admin-fg"><label class="admin-fl">Class *</label><select class="admin-fi"><option>Select Class</option><option>Play School</option><option>Nursery</option><option>LKG</option><option>UKG</option><option>Class I</option><option>Class II</option><option>Class III</option><option>Class IV</option><option>Class V</option><option>Class VI</option><option>Class VII</option><option>Class VIII</option></select></div>
-            <div class="admin-fg"><label class="admin-fl">Village/Area</label><input class="admin-fi" type="text" placeholder="Village or area name"></div>
-            <div class="admin-fg"><label class="admin-fl">Date</label><input class="admin-fi" type="date"></div>
-          </div>
-          <button class="admin-submit-btn" style="margin-top:16px" onclick="showToast('Inquiry added successfully!')">+ Add Inquiry</button>
-        </div>
-      </div>
-
-      <!-- NOTICES TAB -->
-      <div class="admin-tab" id="tab-notices">
-        <div class="admin-section-title">Notice Management</div>
-        <div class="admin-section-sub">विद्यालय सूचनाएं प्रबंधित करें</div>
-        <div class="admin-card">
-          <h3>➕ Publish New Notice</h3>
-          <div class="notice-form">
-            <div class="admin-fg"><label class="admin-fl">Notice Title (Hindi) *</label><input class="admin-fi" type="text" placeholder="सूचना का शीर्षक हिन्दी में"></div>
-            <div class="admin-fg"><label class="admin-fl">Notice Title (English)</label><input class="admin-fi" type="text" placeholder="Notice title in English"></div>
-            <div class="admin-form-grid">
-              <div class="admin-fg"><label class="admin-fl">Category</label><select class="admin-fi"><option>Notice / सूचना</option><option>Exam / परीक्षा</option><option>Event / कार्यक्रम</option><option>Holiday / अवकाश</option><option>PTM</option></select></div>
-              <div class="admin-fg"><label class="admin-fl">Date</label><input class="admin-fi" type="date"></div>
-            </div>
-            <div class="admin-fg"><label class="admin-fl">Description (Hindi)</label><textarea class="admin-fi" rows="3" placeholder="सूचना का विवरण..." style="resize:none"></textarea></div>
-            <div class="admin-fg"><label class="admin-fl">Description (English)</label><textarea class="admin-fi" rows="3" placeholder="Notice description..." style="resize:none"></textarea></div>
-            <div><button class="admin-submit-btn" onclick="showToast('Notice published successfully!')">📢 Publish Notice</button></div>
-          </div>
-        </div>
-        <div class="admin-card">
-          <h3>📋 Active Notices</h3>
-          <table class="admin-table">
-            <thead><tr><th>Title</th><th>Category</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
-            <tbody>
-              <tr><td>प्रवेश प्रारंभ 2026-27</td><td>Notice</td><td>Apr 1, 2026</td><td><span class="admin-badge-new">Active</span></td><td><button class="admin-action-btn btn-view">Edit</button> <button class="admin-action-btn btn-del">Delete</button></td></tr>
-              <tr><td>Annual Exam Schedule 2025-26</td><td>Exam</td><td>Jan 15, 2026</td><td><span class="admin-badge-new">Active</span></td><td><button class="admin-action-btn btn-view">Edit</button> <button class="admin-action-btn btn-del">Delete</button></td></tr>
-              <tr><td>Republic Day Program</td><td>Event</td><td>Jan 26, 2026</td><td><span class="admin-badge-read">Completed</span></td><td><button class="admin-action-btn btn-view">Edit</button> <button class="admin-action-btn btn-del">Delete</button></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- GALLERY TAB -->
-      <div class="admin-tab" id="tab-gallery">
-        <div class="admin-section-title">Gallery Management</div>
-        <div class="admin-section-sub">विद्यालय गैलरी फ़ोटो अपलोड करें</div>
-        <div class="admin-card">
-          <h3>📤 Upload New Photos</h3>
-          <div class="upload-area" onclick="showToast('Please use the file manager to upload photos to your web server.')">
-            <div style="font-size:48px">📷</div>
-            <p>Click to upload photos or drag & drop here</p>
-            <p style="font-size:12px;margin-top:6px">JPG, PNG, WebP — Max 5MB per photo</p>
-          </div>
-          <div class="admin-form-grid" style="margin-top:16px">
-            <div class="admin-fg"><label class="admin-fl">Category</label><select class="admin-fi"><option>Cultural / सांस्कृतिक</option><option>Academics / अकादमिक</option><option>Sports / खेल</option><option>Events / कार्यक्रम</option><option>Olympiad / ओलंपियाड</option><option>Mentorship</option></select></div>
-            <div class="admin-fg"><label class="admin-fl">Caption (Hindi)</label><input class="admin-fi" type="text" placeholder="फ़ोटो का विवरण"></div>
-          </div>
-          <button class="admin-submit-btn" style="margin-top:16px" onclick="showToast('Gallery updated successfully!')">📸 Save to Gallery</button>
-        </div>
-        <div class="admin-card">
-          <h3>🖼️ Gallery Albums</h3>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px">
-            <div style="background:linear-gradient(135deg,var(--md),var(--nvm));border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:13px;text-align:center;padding:12px;cursor:pointer"><div style="font-size:28px;margin-bottom:6px">🎭</div>Cultural Events<div style="font-size:11px;opacity:.6;margin-top:4px">12 photos</div></div>
-            <div style="background:linear-gradient(135deg,var(--m),var(--mm));border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:13px;text-align:center;padding:12px;cursor:pointer"><div style="font-size:28px;margin-bottom:6px">🏆</div>Olympiad<div style="font-size:11px;opacity:.6;margin-top:4px">5 photos</div></div>
-            <div style="background:linear-gradient(135deg,#1a5a38,#2d9e60);border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:13px;text-align:center;padding:12px;cursor:pointer"><div style="font-size:28px;margin-bottom:6px">📚</div>Library<div style="font-size:11px;opacity:.6;margin-top:4px">3 photos</div></div>
-            <div style="background:linear-gradient(135deg,var(--nvm),var(--nv));border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:13px;text-align:center;padding:12px;cursor:pointer"><div style="font-size:28px;margin-bottom:6px">🌟</div>Mentorship<div style="font-size:11px;opacity:.6;margin-top:4px">4 photos</div></div>
-            <div style="background:linear-gradient(135deg,#2d4a2d,#4a7a4a);border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:13px;text-align:center;padding:12px;cursor:pointer"><div style="font-size:28px;margin-bottom:6px">⚽</div>Sports<div style="font-size:11px;opacity:.6;margin-top:4px">8 photos</div></div>
-            <div style="border:2px dashed var(--bd);border-radius:12px;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--t3);font-size:13px;cursor:pointer" onclick="showToast('Create new album feature coming soon!')"><div style="font-size:28px;margin-bottom:6px">➕</div>New Album</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CONTACTS TAB -->
-      <div class="admin-tab" id="tab-contacts">
-        <div class="admin-section-title">Contact Messages</div>
-        <div class="admin-section-sub">अभिभावकों के संदेश एवं पूछताछ</div>
-        <div class="admin-card">
-          <h3>📨 Recent Messages</h3>
-          <table class="admin-table">
-            <thead><tr><th>Name</th><th>Phone</th><th>Subject</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
-            <tbody>
-              <tr><td>Mohan Lal</td><td>+91-9876123456</td><td>Fee Structure</td><td>Apr 2</td><td><span class="admin-badge-new">Unread</span></td><td><button class="admin-action-btn btn-view">Reply</button></td></tr>
-              <tr><td>Sita Devi</td><td>+91-8765012345</td><td>Admission Inquiry</td><td>Apr 1</td><td><span class="admin-badge-read">Replied</span></td><td><button class="admin-action-btn btn-view">View</button></td></tr>
-              <tr><td>Ravi Kumar</td><td>+91-7654901234</td><td>Transport Query</td><td>Mar 30</td><td><span class="admin-badge-read">Replied</span></td><td><button class="admin-action-btn btn-view">View</button></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- TEACHERS TAB -->
-      <div class="admin-tab" id="tab-teachers">
-        <div class="admin-section-title">Faculty Management</div>
-        <div class="admin-section-sub">शिक्षक प्रबंधन — ATV निर्मली</div>
-        <div class="admin-card">
-          <h3>👨‍🏫 Faculty List</h3>
-          <table class="admin-table">
-            <thead><tr><th>Name</th><th>Qualification</th><th>Subject</th><th>Experience</th><th>Status</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Sushil Kumar Sahu</strong></td><td>Grad + D.El.Ed</td><td>Principal / All</td><td>10 Yrs</td><td><span class="admin-badge-new">Head Teacher</span></td></tr>
-              <tr><td>Basuki Nath Jha</td><td>Grad + B.Ed</td><td>Hindi / Social</td><td>5 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Chandrakala Kumari</td><td>Grad + D.El.Ed</td><td>Primary</td><td>2 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Rekha Kumari</td><td>Grad + B.Ed</td><td>English</td><td>7 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Rubi Kumari</td><td>Grad + B.Ed</td><td>Maths</td><td>3 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Sachin Kumar Sah</td><td>Grad + B.Ed</td><td>Science</td><td>4 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Arbind Kumar Yadav</td><td>PG + D.El.Ed</td><td>Social Science</td><td>3 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-              <tr><td>Rahul Agarwal</td><td>B.Com, PGDCA</td><td>Computer</td><td>5 Yrs</td><td><span class="admin-badge-read">Active</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- SETTINGS TAB -->
-      <div class="admin-tab" id="tab-settings">
-        <div class="admin-section-title">Settings</div>
-        <div class="admin-section-sub">Admin panel settings & security</div>
-        <div class="admin-card">
-          <h3>🔐 Change Password</h3>
-          <div style="max-width:400px;display:flex;flex-direction:column;gap:12px">
-            <div class="admin-fg"><label class="admin-fl">Current Password</label><input class="admin-fi" type="password" placeholder="Current password"></div>
-            <div class="admin-fg"><label class="admin-fl">New Password</label><input class="admin-fi" type="password" placeholder="New password (min 8 chars)"></div>
-            <div class="admin-fg"><label class="admin-fl">Confirm Password</label><input class="admin-fi" type="password" placeholder="Confirm new password"></div>
-            <button class="admin-submit-btn" onclick="showToast('Password updated successfully!')">🔒 Update Password</button>
-          </div>
-        </div>
-        <div class="admin-card">
-          <h3>🏫 School Info</h3>
-          <div class="admin-form-grid">
-            <div class="admin-fg"><label class="admin-fl">School Name</label><input class="admin-fi" type="text" value="Anupam Takshashila Vidyapith"></div>
-            <div class="admin-fg"><label class="admin-fl">Reg. Number</label><input class="admin-fi" type="text" value="20811012024118185825"></div>
-            <div class="admin-fg"><label class="admin-fl">Phone 1</label><input class="admin-fi" type="tel" value="+91-9006308822"></div>
-            <div class="admin-fg"><label class="admin-fl">Phone 2</label><input class="admin-fi" type="tel" value="+91-8789724803"></div>
-            <div class="admin-fg"><label class="admin-fl">Session</label><input class="admin-fi" type="text" value="2026-27"></div>
-            <div class="admin-fg"><label class="admin-fl">Pincode</label><input class="admin-fi" type="text" value="847452"></div>
-          </div>
-          <button class="admin-submit-btn" style="margin-top:16px" onclick="showToast('School info saved!')">💾 Save Changes</button>
-        </div>
-        <div class="admin-card" style="background:rgba(196,57,45,.04);border:1px solid rgba(196,57,45,.15)">
-          <h3 style="color:#c4392d">⚠️ Admin Credentials</h3>
-          <p style="font-size:13px;color:var(--t3);margin-bottom:12px">Default login credentials — change immediately after first login.</p>
-          <div style="background:var(--cr);border-radius:8px;padding:14px;font-family:monospace;font-size:13px">
-            <div>Username: <strong>atv_admin</strong></div>
-            <div style="margin-top:4px">Password: <strong>ATV@2026!</strong></div>
-          </div>
-          <p style="font-size:12px;color:#c4392d;margin-top:8px">⚠️ Change your password above after first login!</p>
-        </div>
-      </div>
-
-    </div><!-- /admin-content -->
-  </div><!-- /admin-body -->
-</div><!-- /admin-panel -->
-
-<!-- TOAST -->
-<div class="admin-success-toast" id="adminToast">✓ Action completed successfully!</div>
 
 <script>
 var CL='hi';
@@ -1480,17 +1155,43 @@ function closeMob(){
 window.addEventListener('scroll',function(){
   document.getElementById('nav').classList.toggle('sc',window.scrollY>50);
 });
-function submitAdm(){
-  var p=document.getElementById('pN').value.trim();
-  var ph=document.getElementById('ph').value.trim();
-  var cl=document.getElementById('cl').value;
-  if(!p||!ph||!cl){alert('Please fill all required fields. / कृपया सभी * fields भरें।');return;}
-  document.getElementById('admFrm').style.display='none';
-  document.getElementById('admOk').style.display='block';
+var FORM_ENDPOINT='https://formsubmit.co/ajax/atvnirmali@gmail.com';
+function fv(id){var e=document.getElementById(id);return e?e.value.trim():'';}
+function okPhone(v){return /^(\+?91[\s-]?)?[6-9]\d{9}$/.test(v.replace(/[\s-]/g,''));}
+function sendForm(data,btn,onOk){
+  var orig=btn.innerHTML;
+  btn.disabled=true;btn.innerHTML='⏳ Sending... / भेजा जा रहा है...';
+  data._template='table';data._captcha='false';
+  fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok||String(j.success)!=='true')throw new Error(j.message||('HTTP '+r.status));});})
+    .then(onOk)
+    .catch(function(){
+      btn.disabled=false;btn.innerHTML=orig;
+      alert('Sorry, message could not be sent. Please call +91-9006308822 or WhatsApp +91-8789724803.\nक्षमा करें, संदेश नहीं भेजा जा सका। कृपया कॉल या WhatsApp करें।');
+    });
+}
+function submitAdm(btn){
+  if(fv('admHp'))return;
+  var p=fv('pN'),ph=fv('ph'),cl=fv('cl'),vl=fv('vl');
+  if(!p||!ph||!cl||!vl){alert('Please fill all required fields. / कृपया सभी * fields भरें।');return;}
+  if(!okPhone(ph)){alert('Please enter a valid 10-digit mobile number. / कृपया सही 10 अंकों का मोबाइल नंबर भरें।');return;}
+  sendForm({_subject:'New Admission Inquiry — '+p+' ('+cl+')','Form':'Admission Inquiry',"Parent's Name":p,"Child's Name":fv('cN'),'Phone':ph,'Class':cl,'Village / Area':vl,'Date of Birth':fv('db'),'Query':fv('aq')},btn,function(){
+    document.getElementById('admFrm').style.display='none';
+    document.getElementById('admOk').style.display='block';
+  });
 }
 function submitContact(btn){
-  btn.innerHTML='✓ <span class="hi">संदेश भेजा गया!</span><span class="en">Message Sent!</span>';
-  btn.style.background='#2d6e2d';btn.disabled=true;
+  if(fv('ctHp'))return;
+  var n=fv('ctN'),ph=fv('ctP'),em=fv('ctE'),sb=fv('ctS'),m=fv('ctM');
+  if(!n||!ph||!sb||!m){alert('Please fill all required fields. / कृपया सभी * fields भरें।');return;}
+  if(!okPhone(ph)){alert('Please enter a valid 10-digit mobile number. / कृपया सही 10 अंकों का मोबाइल नंबर भरें।');return;}
+  if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){alert('Please enter a valid email. / कृपया सही ईमेल भरें।');return;}
+  var d={_subject:'New Website Message — '+sb,'Form':'Contact Message','Name':n,'Phone':ph,'Email':em,'Subject':sb,'Message':m};
+  if(em)d._replyto=em;
+  sendForm(d,btn,function(){
+    btn.innerHTML='✓ <span class="hi">संदेश भेजा गया!</span><span class="en">Message Sent!</span>';
+    btn.style.background='#2d6e2d';
+  });
 }
 function initFU(){
   var obs=new IntersectionObserver(function(entries){
@@ -1501,97 +1202,6 @@ function initFU(){
 initFU();
 window.addEventListener('resize',function(){if(window.innerWidth>768)closeMob();});
 
-// ============ ADMIN DASHBOARD JS ============
-var ADMIN_CREDENTIALS = {
-  'atv_admin': 'ATV@2026!',
-  'principal': 'ATV@Principal2026',
-  'staff': 'ATV@Staff2026'
-};
-var ADMIN_NAMES = {
-  'atv_admin': 'Super Admin',
-  'principal': 'Principal Sahu',
-  'staff': 'Staff User'
-};
-
-function openAdmin() {
-  document.getElementById('adminOverlay').classList.add('show');
-  document.getElementById('adminUser').value = '';
-  document.getElementById('adminPass').value = '';
-  document.getElementById('adminErr').style.display = 'none';
-  setTimeout(function(){document.getElementById('adminUser').focus();}, 100);
-}
-
-function doLogin() {
-  var user = document.getElementById('adminUser').value.trim();
-  var pass = document.getElementById('adminPass').value;
-  var err = document.getElementById('adminErr');
-  if (!user || !pass) { err.style.display='block'; err.textContent='❌ Username और Password दोनों भरें।'; return; }
-  if (ADMIN_CREDENTIALS[user] && ADMIN_CREDENTIALS[user] === pass) {
-    document.getElementById('adminOverlay').classList.remove('show');
-    document.getElementById('adminPanel').classList.add('show');
-    document.getElementById('adminUserBadge').textContent = '👤 ' + ADMIN_NAMES[user];
-    document.body.style.overflow = 'hidden';
-    err.style.display = 'none';
-  } else {
-    err.style.display = 'block';
-    err.textContent = '❌ गलत Username या Password। Please try again.';
-    document.getElementById('adminPass').value = '';
-    document.getElementById('adminPass').focus();
-  }
-}
-
-function doLogout() {
-  if (confirm('Are you sure you want to logout?')) {
-    document.getElementById('adminPanel').classList.remove('show');
-    document.body.style.overflow = '';
-  }
-}
-
-function togglePw() {
-  var p = document.getElementById('adminPass');
-  var e = document.getElementById('eyeIcon');
-  if (p.type === 'password') { p.type = 'text'; e.textContent = '🙈'; }
-  else { p.type = 'password'; e.textContent = '👁️'; }
-}
-
-function switchAdminTab(name, el) {
-  document.querySelectorAll('.admin-tab').forEach(function(t){t.classList.remove('on');});
-  document.querySelectorAll('.admin-nav-item').forEach(function(n){n.classList.remove('on');});
-  var tab = document.getElementById('tab-'+name);
-  if (tab) tab.classList.add('on');
-  if (el) el.classList.add('on');
-}
-
-function showToast(msg) {
-  var t = document.getElementById('adminToast');
-  t.textContent = '✓ ' + msg;
-  t.classList.add('show');
-  setTimeout(function(){t.classList.remove('show');}, 3000);
-}
-
-function exportCSV() {
-  var rows = [['#','Parent Name','Child Name','Class','Phone','Village','Date']];
-  document.querySelectorAll('#admissionTableBody tr').forEach(function(r, i){
-    var cells = r.querySelectorAll('td');
-    if (cells.length > 6) rows.push([cells[0].textContent, cells[1].textContent, cells[2].textContent, cells[3].textContent, cells[4].textContent, cells[5].textContent, cells[6].textContent]);
-  });
-  var csv = rows.map(function(r){return r.join(',');}).join('\n');
-  var a = document.createElement('a');
-  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
-  a.download = 'ATV_Admissions_2026-27.csv';
-  a.click();
-}
-
-// Close admin panel on ESC
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    document.getElementById('adminOverlay').classList.remove('show');
-    if (document.getElementById('adminPanel').classList.contains('show')) {
-      if (confirm('Close admin panel?')) { doLogout(); }
-    }
-  }
-});
-// Admin login on Enter key in password field handled inline
 
 </script>
 </body>
