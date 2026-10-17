@@ -304,6 +304,21 @@ footer{background:var(--nv);padding:64px 0 0}
 .faqi[open] summary::after{content:"−"}
 .faqi p{font-size:14px;color:var(--t3);line-height:1.8;padding:0 0 18px}
 @media(max-width:768px){.faqi{padding:0 16px}}
+/* AREAS / VILLAGE PAGES */
+.areas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.areas a{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--bd);color:var(--md);font-size:14px;font-weight:600;text-decoration:none;transition:var(--tr)}
+.areas a:hover{border-color:var(--m);background:rgba(123,29,29,.04)}
+.fareas{margin-top:18px;font-size:12px;color:rgba(255,255,255,.5);line-height:2}
+.fareas a{color:rgba(255,255,255,.65);text-decoration:none;margin-right:12px;white-space:nowrap}
+.fareas a:hover{color:var(--gb)}
+.vfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.vfact{background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:20px;text-align:center}
+.vfact b{display:block;font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--m);line-height:1.2}
+.vfact span{font-size:12px;color:var(--t3)}
+.vlist{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:20px}
+.vlist p{font-size:14px;color:var(--t2);line-height:1.7;display:flex;gap:10px}
+.vlist p::before{content:"✓";color:var(--m);font-weight:700}
+@media(max-width:768px){.vfacts{grid-template-columns:1fr 1fr}.vlist{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -629,6 +644,8 @@ footer{background:var(--nv);padding:64px 0 0}
     </div>
   </div>
 </div></section>
+
+<!--AREAS-HOME-->
 
 <!-- FAQ -->
 <section class="sec" id="faq" style="background:var(--cr)"><div class="con">
@@ -1086,6 +1103,7 @@ footer{background:var(--nv);padding:64px 0 0}
         <p class="hi" style="font-family:'Tiro Devanagari Hindi',serif">बिहार सरकार से पंजीकृत। CBSE उन्मुख। प्ले स्कूल से कक्षा VIII। IIT-IIM Mentorship Program।</p>
         <p class="en">Bihar Govt. registered CBSE-oriented school. Play School to Class VIII. IIT-IIM mentorship. Nirmali, Supaul, Bihar.</p>
         <div class="freg">Reg. No. 20811012024118185825 · Est. 2020 · Bihar Sarkar Manyata Prapt</div>
+        <!--AREAS-FOOTER-->
       </div>
       <div class="fc4">
         <h4 class="hi">त्वरित लिंक</h4><h4 class="en">Quick Links</h4>
