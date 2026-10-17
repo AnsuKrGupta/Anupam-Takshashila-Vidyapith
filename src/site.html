@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="hi" id="R">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--SEO-->
+<link rel="icon" href="/images/atv-nirmali-logo.webp" type="image/webp">
+<link rel="apple-touch-icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --m:#7B1D1D;--md:#4A0E0E;--mm:#9B2525;
+  --g:#C9A84C;--gb:#E8C97A;--gd:#8B6914;
+  --cr:#FDF6E3;--cr2:#F5EDD0;--cr3:#EDE0B8;
+  --nv:#0F1E3C;--nvm:#1A3060;
+  --t1:#1A1208;--t2:#4A3C28;--t3:#7A6A50;
+  --bd:rgba(123,29,29,.12);--sh:0 8px 32px rgba(74,14,14,.12);
+  --r:8px;--rm:14px;--rl:20px;--rx:28px;--nh:72px;
+  --tr:.3s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cr);color:var(--t1);overflow-x:hidden;line-height:1.6}
+[lang=hi] .hi{display:block!important}[lang=hi] .en{display:none!important}
+[lang=en] .en{display:block!important}[lang=en] .hi{display:none!important}
+.hi,.en{display:none}
+a{text-decoration:none;color:inherit}button{cursor:pointer;font-family:inherit;border:none}
+input,select,textarea{font-family:inherit}img{display:block;max-width:100%;height:auto}
+.con{max-width:1240px;margin:0 auto;padding:0 40px}
+.sec{padding:88px 0}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--m);background:rgba(123,29,29,.07);padding:6px 16px;border-radius:100px;border:1px solid rgba(123,29,29,.15)}
+.bi{color:var(--gb);background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3)}
+.hx{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,5vw,64px);font-weight:700;line-height:1.1;color:var(--md)}
+.hl{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,48px);font-weight:700;line-height:1.15;color:var(--md)}
+.hm{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,32px);font-weight:600;color:var(--md)}
+.divl{width:52px;height:3px;background:linear-gradient(90deg,var(--m),var(--g));border-radius:2px;margin:16px 0}
+.divc{margin-left:auto;margin-right:auto}
+.tc{text-align:center}
+.mt1{margin-top:12px}.mt2{margin-top:24px}.mt3{margin-top:40px}
+.mb1{margin-bottom:12px}.mb2{margin-bottom:24px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--r);font-size:14px;font-weight:700;transition:var(--tr);white-space:nowrap;border:none}
+.bp{background:var(--m);color:#fff;box-shadow:0 4px 16px rgba(123,29,29,.3)}.bp:hover{background:var(--md);transform:translateY(-2px)}
+.bg{background:linear-gradient(135deg,var(--g),var(--gb));color:var(--md);box-shadow:0 4px 16px rgba(201,168,76,.35)}.bg:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.45)}
+.bo{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}.bo:hover{border-color:var(--gb);color:var(--gb)}
+.bom{background:transparent;color:var(--m);border:1.5px solid var(--m)}.bom:hover{background:var(--m);color:#fff}
+.blg{padding:15px 36px;font-size:15px}.bsm{padding:9px 20px;font-size:13px}
+.lbar{background:var(--nv);padding:7px 0}
+.lbar-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.lbar-l{font-size:12px;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.lbar-l a{color:rgba(255,255,255,.7);font-size:12px;transition:var(--tr)}.lbar-l a:hover{color:var(--gb)}
+.lbtn{padding:4px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:1px;border:1px solid rgba(201,168,76,.4);background:transparent;color:rgba(255,255,255,.7);cursor:pointer;transition:var(--tr)}
+.lbtn.on{background:var(--g);color:var(--md);border-color:var(--g)}
+.ticker{background:var(--md);color:var(--gb);font-size:12px;font-weight:600;padding:8px 0;overflow:hidden}
+.tick-in{display:flex;animation:tick 44s linear infinite;width:max-content}
+.titem{padding:0 44px;white-space:nowrap;display:inline-flex;align-items:center;gap:10px}
+.tdot{width:4px;height:4px;background:var(--g);border-radius:50%;opacity:.6}
+.nav{position:sticky;top:0;z-index:1000;background:rgba(123,29,29,.97);backdrop-filter:blur(16px);border-bottom:2px solid var(--g);height:var(--nh);transition:var(--tr)}
+.nav.sc{background:rgba(74,14,14,.99);box-shadow:0 4px 24px rgba(0,0,0,.3)}
+.nav-in{height:100%;display:flex;align-items:center;justify-content:space-between}
+.nlogo{display:flex;align-items:center;gap:12px}
+.logo-img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--g);flex-shrink:0}
+.ln1{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:#fff;line-height:1.2;display:block}
+.ln2{font-size:10px;color:var(--gb);letter-spacing:1.5px;text-transform:uppercase;opacity:.85;display:block;margin-top:2px}
+.nmenu{display:flex;align-items:center;gap:2px}
+.nl{font-size:12.5px;font-weight:500;color:rgba(255,255,255,.82);padding:7px 11px;border-radius:6px;transition:var(--tr);cursor:pointer;position:relative}
+.nl:hover,.nl.on{color:#fff;background:rgba(201,168,76,.15)}
+.nl.on::after{content:'';position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--g)}
+.nacts{display:flex;align-items:center;gap:8px}
+.nph{font-size:11px;color:var(--gb);font-weight:600;padding:6px 12px;border:1px solid rgba(201,168,76,.3);border-radius:6px;white-space:nowrap;text-decoration:none}
+.hbg{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none;cursor:pointer}
+.hbg span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:var(--tr)}
+.mobn{position:fixed;top:0;right:0;bottom:0;width:min(300px,85vw);z-index:999;background:var(--md);padding:88px 28px 40px;flex-direction:column;gap:4px;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);display:flex}
+.mobn.open{transform:translateX(0)}
+.mobov{position:fixed;inset:0;z-index:998;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .4s}
+.mobov.show{opacity:1;pointer-events:auto}
+.mlink{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#fff;padding:12px 0;border-bottom:1px solid rgba(201,168,76,.15);cursor:pointer;transition:var(--tr)}
+.mlink:hover{color:var(--gb)}
+.page{display:none}.page.active{display:block}
+.phero{background:linear-gradient(160deg,var(--md),var(--nv));padding:72px 0 56px;text-align:center;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(201,168,76,.03) 0,rgba(201,168,76,.03) 1px,transparent 0,transparent 50%);background-size:36px 36px}
+.phero .con{position:relative;z-index:1}
+.hero{min-height:calc(100vh - var(--nh) - 90px);background:linear-gradient(160deg,var(--md) 0%,var(--m) 45%,var(--nvm) 100%);position:relative;overflow:hidden;display:flex;align-items:center}
+.hpat{position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle at 20% 50%,var(--g) 1px,transparent 1px),radial-gradient(circle at 80% 20%,var(--g) 1px,transparent 1px);background-size:40px 40px,60px 60px}
+.hglow{position:absolute;right:-200px;top:-100px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.12),transparent 65%);pointer-events:none}
+.hero-in{position:relative;z-index:2;padding:72px 0;width:100%}
+.hero-lay{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.hcont{animation:heroIn 1s ease both}
+.htit{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5.5vw,72px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:8px}
+.acc{color:var(--gb);font-style:italic}
+.admbdg{background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;padding:10px 20px;border-radius:var(--r);font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:8px;animation:pulse 2s infinite;margin-bottom:20px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(231,76,60,.4)}50%{box-shadow:0 0 0 12px rgba(231,76,60,0)}}
+.hdesc{font-size:15px;color:rgba(255,255,255,.72);line-height:1.8;max-width:520px;margin-bottom:36px}
+.hctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px}
+.hstats{display:flex;gap:32px;padding-top:32px;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
+.snum{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:var(--gb);line-height:1}
+.slbl{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px;letter-spacing:.5px}
+.hright{display:flex;flex-direction:column;gap:0;animation:heroR 1s .2s ease both}
+.hmain{border-radius:var(--rl);overflow:hidden;border:3px solid rgba(201,168,76,.3);box-shadow:0 24px 64px rgba(0,0,0,.4)}
+.hmain img{width:100%;height:340px;object-fit:cover}
+.hpills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.hpill{background:rgba(255,255,255,.07);border:1px solid rgba(201,168,76,.2);border-radius:var(--rm);padding:12px 16px;backdrop-filter:blur(10px);transition:var(--tr)}
+.hpill:hover{background:rgba(255,255,255,.1);border-color:rgba(201,168,76,.4)}
+.hpic{font-size:20px;margin-bottom:6px}.hpt{font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}.hps{font-size:11px;color:rgba(255,255,255,.55)}
+.strip{background:linear-gradient(135deg,var(--gd),var(--g),var(--gb));padding:13px 0;overflow:hidden}
+.strip-in{display:flex;animation:tick 28s linear infinite;width:max-content}
+.sitem{white-space:nowrap;padding:0 32px;font-size:13px;font-weight:700;color:var(--md);display:flex;align-items:center;gap:12px;letter-spacing:.3px}
+.sdot{width:4px;height:4px;background:var(--md);border-radius:50%;opacity:.4}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wcard{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);padding:28px 24px;transition:var(--tr);position:relative;overflow:hidden}
+.wcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--m),var(--g));transform:scaleX(0);transform-origin:left;transition:var(--tr)}
+.wcard:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(123,29,29,.12)}.wcard:hover::before{transform:scaleX(1)}
+.wic{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--m),var(--mm));display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px}
+.wcard h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--md);margin-bottom:8px}
+.wcard p{font-size:13px;color:var(--t3);line-height:1.7}
+.impact{background:linear-gradient(135deg,var(--md),var(--nv));padding:64px 0}
+.impg{display:grid;grid-template-columns:repeat(4,1fr)}
+.impi{text-align:center;padding:36px 16px;position:relative}
+.impi:not(:last-child)::after{content:'';position:absolute;right:0;top:25%;bottom:25%;width:1px;background:rgba(255,255,255,.1)}
+.impn{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:var(--gb);line-height:1;margin-bottom:8px}
+.impl{font-size:12px;font-weight:600;color:rgba(255,255,255,.6);letter-spacing:1px;text-transform:uppercase}
+.play{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:center}
+.pport{background:linear-gradient(160deg,var(--md),var(--nv));border-radius:var(--rx);overflow:hidden;position:relative}
+.pport img{width:100%;height:420px;object-fit:cover;object-position:top center}
+.pover{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(74,14,14,.95),transparent);padding:28px 24px}
+.pname{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:#fff}
+.prole{font-size:11px;color:var(--gb);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+.pstats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:16px;background:rgba(255,255,255,.1);border-radius:10px;overflow:hidden}
+.psi{padding:12px 8px;text-align:center;background:rgba(255,255,255,.05)}
+.psn{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gb);font-weight:700}
+.psl{font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px}
+.bq{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:var(--m);line-height:1.65;padding:20px 24px;background:rgba(123,29,29,.04);border-left:4px solid var(--g);border-radius:0 var(--rm) var(--rm) 0;margin:20px 0}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto;gap:12px}
+.pgi{border-radius:var(--rm);overflow:hidden;position:relative;cursor:pointer}
+.pgi img{width:100%;height:200px;object-fit:cover;transition:transform .4s}
+.pgi:hover img{transform:scale(1.05)}
+.pgov{position:absolute;inset:0;background:rgba(123,29,29,.65);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;transition:var(--tr);color:#fff;text-align:center;padding:12px}
+.pgi:hover .pgov{opacity:1}
+.pgi.wide{grid-column:span 2}.pgi.wide img{width:100%;height:280px}
+.tcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;margin-top:40px}
+.tcrd{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);padding:24px;transition:var(--tr)}
+.tcrd:hover{box-shadow:var(--sh);border-color:var(--m);transform:translateY(-3px)}
+.tcav{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--m),var(--g));display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;margin-bottom:14px}
+.tcnm{font-size:15px;font-weight:700;color:var(--md);margin-bottom:4px}
+.tcql{font-size:12px;color:var(--t3);margin-bottom:10px}
+.tcps{display:flex;gap:6px;flex-wrap:wrap}
+.tcp{font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px}
+.ph{background:rgba(123,29,29,.1);color:var(--m)}.pe{background:rgba(26,39,68,.08);color:var(--nv)}
+.pt{background:rgba(45,110,45,.1);color:#1d6e32}.pc{background:rgba(201,168,76,.12);color:var(--gd)}
+.feebx{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);overflow:hidden;box-shadow:var(--sh)}
+.feehd{background:var(--m);color:#fff;padding:16px 24px;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700}
+.feetb{width:100%;border-collapse:collapse}
+.feetb tr:nth-child(even){background:rgba(123,29,29,.03)}
+.feetb td{padding:12px 24px;font-size:14px;border-bottom:1px solid var(--bd)}
+.feetb td:last-child{text-align:right;font-weight:700;color:var(--m)}
+.feetb .tot td{background:rgba(123,29,29,.07);font-weight:700;font-size:15px}
+.feenote{background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:var(--rm);padding:16px 20px;margin-top:16px;font-size:13px;color:var(--gd)}
+.ncard{display:flex;gap:16px;padding:18px;border-radius:var(--rm);background:var(--cr);border:1px solid var(--bd);margin-bottom:12px;transition:var(--tr);cursor:pointer}
+.ncard:hover{border-color:var(--m);transform:translateX(4px)}
+.ndb{background:var(--m);border-radius:var(--r);padding:9px 12px;text-align:center;flex-shrink:0;min-width:52px}
+.ndd{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:#fff;line-height:1}
+.ndm{font-size:10px;color:var(--gb);letter-spacing:1px;text-transform:uppercase}
+.ntag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;margin-bottom:5px;display:inline-block}
+.ne{background:rgba(26,39,68,.1);color:var(--nv)}.nev{background:rgba(201,168,76,.15);color:var(--gd)}
+.nn{background:rgba(123,29,29,.08);color:var(--m)}.nh2{background:rgba(30,110,50,.1);color:#1d6e32}
+.nt{font-size:14px;font-weight:600;color:var(--t1);margin-bottom:3px}
+.nd2{font-size:12px;color:var(--t3);line-height:1.5}
+.sdcard{background:var(--cr);border:1px solid var(--bd);border-radius:var(--rl);padding:24px;margin-bottom:18px}
+.sdcard h3{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--md);margin-bottom:14px}
+.ql{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd);font-size:13px;font-weight:500;color:var(--t2);cursor:pointer;transition:var(--tr)}
+.ql:last-child{border-bottom:none}.ql:hover{color:var(--m)}
+.qlic{width:30px;height:30px;background:rgba(123,29,29,.07);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.emg{background:var(--m);border-radius:var(--rl);padding:24px;color:#fff}
+.emg h3{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:7px}
+.epi{display:flex;align-items:flex-start;gap:9px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:13px}
+.epi:last-of-type{border-bottom:none}.epn{font-weight:700;color:var(--gb)}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bcard{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);overflow:hidden;transition:var(--tr)}
+.bcard:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.bcimg{height:150px;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,var(--md),var(--nvm))}
+.bcbody{padding:18px}
+.btag{font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(123,29,29,.08);color:var(--m);margin-bottom:10px;display:inline-block}
+.bcbody h3{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--md);margin-bottom:7px;line-height:1.3}
+.bcbody p{font-size:13px;color:var(--t3);line-height:1.6;margin-bottom:12px}
+.bcbody a{font-size:12px;font-weight:700;color:var(--m)}
+.pgrid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.pcard2{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);padding:28px;transition:var(--tr)}
+.pcard2:hover{border-color:var(--m);box-shadow:var(--sh);transform:translateY(-3px)}
+.pcic{font-size:38px;margin-bottom:14px}
+.pcard2 h3{font-size:17px;font-weight:700;color:var(--md);margin-bottom:8px}
+.pcard2 p{font-size:13px;color:var(--t3);line-height:1.7}
+.adlay{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--bd)}
+.step:last-child{border-bottom:none}
+.stepl{display:flex;flex-direction:column;align-items:center}
+.stepn{width:44px;height:44px;border-radius:50%;background:var(--m);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;flex-shrink:0}
+.stepln{width:2px;flex:1;background:linear-gradient(to bottom,var(--m),transparent);margin:4px 0;min-height:18px}
+.step:last-child .stepln{display:none}
+.stepb h4{font-size:15px;font-weight:700;color:var(--md);margin-bottom:5px}
+.stepb p{font-size:13px;color:var(--t3);line-height:1.65}
+.fbx{background:var(--cr);border:1px solid var(--bd);border-radius:var(--rx);padding:36px;box-shadow:var(--sh)}
+.ftit{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--md);font-weight:700;margin-bottom:5px}
+.fsub2{font-size:13px;color:var(--t3);margin-bottom:24px}
+.fg{margin-bottom:14px}
+.fl{display:block;font-size:11px;font-weight:700;color:var(--md);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.fi{width:100%;padding:11px 14px;border:1.5px solid rgba(123,29,29,.15);border-radius:var(--r);font-size:13px;background:#fff;color:var(--t1);transition:var(--tr);outline:none}
+.fi:focus{border-color:var(--m);box-shadow:0 0 0 3px rgba(123,29,29,.07)}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fsbtn{width:100%;background:var(--m);color:#fff;padding:14px;border-radius:var(--r);font-size:14px;font-weight:700;font-family:inherit;transition:var(--tr);margin-top:4px;border:none;cursor:pointer}
+.fsbtn:hover{background:var(--md);transform:translateY(-1px)}
+.fnote{text-align:center;font-size:11px;color:var(--t3);margin-top:10px}
+.fnote strong{color:var(--m)}
+.fok{display:none;text-align:center;padding:24px;background:rgba(45,110,45,.06);border:1px solid rgba(45,110,45,.2);border-radius:var(--rm);margin-top:10px}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcrd2{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);padding:24px;transition:var(--tr)}
+.tcrd2:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.tcs{color:var(--g);font-size:13px;margin-bottom:12px}
+.tcq{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--cr3);line-height:.5;margin-bottom:14px}
+.tctxt{font-size:14px;color:var(--t2);line-height:1.75;font-style:italic;margin-bottom:20px}
+.tcauth{display:flex;align-items:center;gap:10px;padding-top:14px;border-top:1px solid var(--bd)}
+.tcav2{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;flex-shrink:0}
+.tcnm2{font-size:13px;font-weight:700;color:var(--t1)}
+.tcrl{font-size:11px;color:var(--t3)}
+.cicrd{background:#fff;border:1px solid var(--bd);border-radius:var(--rl);padding:20px;display:flex;gap:14px;transition:var(--tr);margin-bottom:14px}
+.cicrd:hover{border-color:var(--m);box-shadow:var(--sh)}
+.ciic{width:44px;height:44px;border-radius:10px;background:rgba(123,29,29,.07);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.cilbl{font-size:10px;font-weight:700;color:var(--m);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
+.cival{font-size:14px;font-weight:600;color:var(--t1);line-height:1.5}
+.cisub{font-size:11px;color:var(--t3);margin-top:2px}
+.mapbx{background:linear-gradient(135deg,var(--nvm),var(--nv));border-radius:var(--rl);height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;margin-top:14px}
+footer{background:var(--nv);padding:64px 0 0}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.07)}
+.fbrand p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.75;margin:14px 0 18px}
+.freg{font-size:11px;color:rgba(255,255,255,.3);border:1px solid rgba(255,255,255,.08);padding:6px 14px;border-radius:6px;display:inline-block}
+.fc4 h4{font-size:10px;font-weight:700;color:rgba(255,255,255,.45);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+.flink{display:block;font-size:13px;color:rgba(255,255,255,.6);margin-bottom:8px;cursor:pointer;transition:var(--tr)}
+.flink:hover{color:var(--gb)}
+.fci{display:flex;gap:8px;margin-bottom:12px}
+.fciic{color:var(--g);font-size:13px;margin-top:2px;flex-shrink:0}
+.fcitx{font-size:12px;color:rgba(255,255,255,.6);line-height:1.55}
+.fbot{padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fcopy{font-size:12px;color:rgba(255,255,255,.3)}
+.socrow{display:flex;gap:8px}
+.socbtn{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;transition:var(--tr);color:rgba(255,255,255,.5);text-decoration:none}
+.socbtn:hover{background:rgba(201,168,76,.15);border-color:var(--g);color:var(--gb)}
+.wa{position:fixed;bottom:28px;right:28px;z-index:998;background:#25D366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(37,211,102,.45);cursor:pointer;text-decoration:none;animation:wap 2.5s infinite}
+.wa:hover{transform:scale(1.1)}
+.watip{position:absolute;right:66px;top:50%;transform:translateY(-50%);background:var(--nv);color:#fff;font-size:11px;font-weight:600;padding:6px 12px;border-radius:7px;white-space:nowrap;opacity:0;transition:var(--tr);pointer-events:none}
+.wa:hover .watip{opacity:1}
+@keyframes wap{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.45)}50%{box-shadow:0 4px 32px rgba(37,211,102,.7)}}
+@keyframes heroIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroR{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.fu{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.fu.vis{opacity:1;transform:translateY(0)}
+@media(max-width:1100px){
+  .hero-lay{grid-template-columns:1fr}.hright{display:none}
+  .impg{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  :root{--nh:64px}
+  .con{padding:0 18px}.sec{padding:56px 0}
+  .nmenu,.nph{display:none}.hbg{display:flex}
+  .wgrid,.g2,.g3,.adlay,.play,.tgrid,.g4,.bgrid{grid-template-columns:1fr}
+  .impg{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr;gap:28px}
+  .fr2{grid-template-columns:1fr}
+  .hctas{flex-direction:column}
+  .lbar-in{flex-direction:column;gap:8px}
+}
+@media(max-width:480px){
+  .btn{width:100%;justify-content:center}
+  .pgrid{grid-template-columns:1fr}
+}
+
+/* QUOTE STYLES */
+.quote-strip{background:linear-gradient(135deg,var(--md),var(--m));padding:48px 0;overflow:hidden;position:relative}
+.quote-strip::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(201,168,76,.04) 0,rgba(201,168,76,.04) 1px,transparent 0,transparent 50%);background-size:30px 30px}
+.quote-scroll{display:flex;gap:0;animation:tick 55s linear infinite;width:max-content;position:relative;z-index:1}
+.quote-card{min-width:340px;max-width:380px;background:rgba(255,255,255,.07);border:1px solid rgba(201,168,76,.2);border-radius:16px;padding:24px 28px;margin:0 12px;backdrop-filter:blur(8px);flex-shrink:0}
+.quote-text{font-family:"Tiro Devanagari Hindi",serif;font-size:15px;color:rgba(255,255,255,.9);line-height:1.8;margin-bottom:10px}
+.quote-attr{font-size:12px;color:var(--gb);font-style:italic;text-align:right}
+.inline-quote{background:rgba(123,29,29,.04);border-left:4px solid var(--g);border-radius:0 12px 12px 0;padding:16px 20px;margin:20px 0;font-family:"Tiro Devanagari Hindi",serif;font-size:15px;color:var(--t2);line-height:1.8;font-style:italic}
+.values-quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.vqcard{background:var(--cr);border:1px solid var(--bd);border-radius:14px;padding:20px;text-align:center;transition:var(--tr)}
+.vqcard:hover{border-color:var(--m);box-shadow:var(--sh);transform:translateY(-3px)}
+.vqcard-icon{font-size:28px;margin-bottom:10px}
+.vqcard-text{font-family:"Tiro Devanagari Hindi",serif;font-size:13px;color:var(--t2);line-height:1.75}
+@media(max-width:768px){.values-quote-grid{grid-template-columns:1fr}}
+
+
+/* FAQ */
+.faql{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faqi{background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:0 22px}
+.faqi summary{cursor:pointer;list-style:none;padding:18px 28px 18px 0;font-weight:700;color:var(--md);font-size:15px;position:relative}
+.faqi summary::-webkit-details-marker{display:none}
+.faqi summary::after{content:"+";position:absolute;right:0;top:14px;font-size:22px;color:var(--m)}
+.faqi[open] summary::after{content:"−"}
+.faqi p{font-size:14px;color:var(--t3);line-height:1.8;padding:0 0 18px}
+@media(max-width:768px){.faqi{padding:0 16px}}
+</style>
+</head>
+<body>
+
+<!-- LANG BAR -->
+<div class="lbar">
+  <div class="con lbar-in">
+    <div class="lbar-l">
+      <span class="hi">📍 वार्ड नं. 4, शर्मा गली, निर्मली, सुपौल, बिहार</span>
+      <span class="en">📍 Ward No. 4, Sharma Gali, Nirmali, Supaul, Bihar</span>
+      <a href="https://www.instagram.com/atv_nirmali?igsh=MWoweDV1am96ZmNxcw==" target="_blank" rel="noopener">📸 Instagram</a>
+      <a href="https://www.facebook.com/share/1ChEcXhxNf/" target="_blank" rel="noopener">📘 Facebook</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="tel:+919006308822" style="color:rgba(255,255,255,.7);font-size:12px;font-weight:600">📞 +91-9006308822</a>
+      <div style="display:flex;gap:6px">
+        <button class="lbtn on" id="bhi" onclick="setLang('hi')">हिन्दी</button>
+        <button class="lbtn" id="ben" onclick="setLang('en')">English</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker"><div class="tick-in">
+  <span class="titem hi">🎓 प्रवेश प्रारंभ 2026-27 — सीमित सीटें <span class="tdot"></span></span>
+  <span class="titem hi">🏆 91% ओलंपियाड सफलता दर <span class="tdot"></span></span>
+  <span class="titem hi">🌟 IIT-IIM Mentorship — कोशी प्रदेश में पहली बार <span class="tdot"></span></span>
+  <span class="titem hi">💻 डिजिटल क्लासरूम एवं कंप्यूटर शिक्षा <span class="tdot"></span></span>
+  <span class="titem hi">📞 +91-9006308822 / +91-8789724803 <span class="tdot"></span></span>
+  <span class="titem hi">📋 बिहार सरकार से मान्यता प्राप्त संस्थान <span class="tdot"></span></span>
+  <span class="titem en">🎓 Admissions Open 2026-27 — Limited Seats <span class="tdot"></span></span>
+  <span class="titem en">🏆 91% Olympiad Selection Rate <span class="tdot"></span></span>
+  <span class="titem en">🌟 IIT-IIM Mentorship — First in Koshi Pradesh <span class="tdot"></span></span>
+  <span class="titem en">💻 Digital Classrooms & Computer Education <span class="tdot"></span></span>
+  <span class="titem en">📞 +91-9006308822 / +91-8789724803 <span class="tdot"></span></span>
+  <span class="titem en">📋 Bihar Govt. Registered Institution <span class="tdot"></span></span>
+  <span class="titem hi">🎓 प्रवेश प्रारंभ 2026-27 — सीमित सीटें <span class="tdot"></span></span>
+  <span class="titem hi">🏆 91% ओलंपियाड सफलता दर <span class="tdot"></span></span>
+  <span class="titem hi">🌟 IIT-IIM Mentorship — कोशी प्रदेश में पहली बार <span class="tdot"></span></span>
+  <span class="titem en">🎓 Admissions Open 2026-27 — Limited Seats <span class="tdot"></span></span>
+  <span class="titem en">🏆 91% Olympiad Selection Rate <span class="tdot"></span></span>
+  <span class="titem en">🌟 IIT-IIM Mentorship — First in Koshi Pradesh <span class="tdot"></span></span>
+</div></div>
+
+<!-- NAVBAR -->
+<nav class="nav" id="nav">
+  <div class="con nav-in">
+    <div class="nlogo">
+      <img class="logo-img" src="/images/atv-nirmali-logo.webp" alt="ATV Nirmali Logo">
+      <div>
+        <span class="ln1 hi">अनुपम तक्षशिला विद्यापीठ</span>
+        <span class="ln1 en">Anupam Takshashila Vidyapith</span>
+        <span class="ln2">Nirmali · Supaul · Est. 2020</span>
+      </div>
+    </div>
+    <div class="nmenu">
+      <a class="nl on" onclick="go('home')"><span class="hi">होम</span><span class="en">Home</span></a>
+      <a class="nl" onclick="go('about')"><span class="hi">हमारे बारे में</span><span class="en">About</span></a>
+      <a class="nl" onclick="go('admissions')"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+      <a class="nl" onclick="go('facilities')"><span class="hi">सुविधाएं</span><span class="en">Facilities</span></a>
+      <a class="nl" onclick="go('gallery')"><span class="hi">गैलरी</span><span class="en">Gallery</span></a>
+      <a class="nl" onclick="go('notices')"><span class="hi">सूचनाएं</span><span class="en">Notices</span></a>
+      <a class="nl" onclick="go('blog')"><span class="hi">ब्लॉग</span><span class="en">Blog</span></a>
+      <a class="nl" onclick="go('contact')"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+    </div>
+    <div class="nacts">
+      <a class="nph" href="tel:+919006308822">📞 9006308822</a>
+      <button class="btn bg bsm" onclick="go('admissions')"><span class="hi">नामांकन करें</span><span class="en">Apply Now</span></button>
+      <button class="hbg" id="hbg" onclick="toggleMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobov" id="mobov" onclick="closeMob()"></div>
+<nav class="mobn" id="mobn">
+  <a class="mlink" onclick="go('home');closeMob()"><span class="hi">होम</span><span class="en">Home</span></a>
+  <a class="mlink" onclick="go('about');closeMob()"><span class="hi">हमारे बारे में</span><span class="en">About</span></a>
+  <a class="mlink" onclick="go('admissions');closeMob()"><span class="hi">प्रवेश 2026-27</span><span class="en">Admissions 2026-27</span></a>
+  <a class="mlink" onclick="go('facilities');closeMob()"><span class="hi">सुविधाएं</span><span class="en">Facilities</span></a>
+  <a class="mlink" onclick="go('gallery');closeMob()"><span class="hi">गैलरी</span><span class="en">Gallery</span></a>
+  <a class="mlink" onclick="go('notices');closeMob()"><span class="hi">सूचनाएं</span><span class="en">Notices</span></a>
+  <a class="mlink" onclick="go('blog');closeMob()"><span class="hi">ब्लॉग</span><span class="en">Blog</span></a>
+  <a class="mlink" onclick="go('contact');closeMob()"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+  <button class="btn bg" style="margin-top:18px;width:100%;justify-content:center" onclick="go('admissions');closeMob()"><span class="hi">नामांकन 2026-27 →</span><span class="en">Admission 2026-27 →</span></button>
+</nav>
+
+<main>
+<!-- ===== HOME ===== -->
+<div id="page-home" class="page active">
+<section class="hero">
+  <div class="hpat"></div><div class="hglow"></div>
+  <div class="con hero-in">
+    <div class="hero-lay">
+      <div class="hcont">
+        <div class="admbdg">🎓 <span class="hi">प्रवेश प्रारंभ 2026-27 — सीमित सीटें</span><span class="en">Admissions Open 2026-27 — Limited Seats</span></div>
+        <h1 class="htit"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">नन्हें कदमों से शुरुआत,<br>उज्ज्वल भविष्य का सुंदर साथ।</span><span class="en">Where <span class="acc">Values</span> Meet Vision</span></h1>
+        <p class="hdesc hi" style="font-family:'Tiro Devanagari Hindi',serif;font-size:17px;color:rgba(255,255,255,.65);margin-bottom:12px">प्रतिभा को पहचान, भविष्य को उड़ान – निर्मली का सर्वश्रेष्ठ प्राथमिक विद्यालय।</p>
+        <p class="hdesc en" style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:22px;color:rgba(255,255,255,.65);margin-bottom:12px">Nurturing Future Leaders from Rural Bihar</p>
+        <p class="hdesc hi" style="font-family:'Tiro Devanagari Hindi',serif">अनुपम तक्षशिला विद्यापीठ — बिहार सरकार से मान्यता प्राप्त, CBSE उन्मुख। प्ले स्कूल से कक्षा VIII तक। डिजिटल कक्षाएं, IIT-IIM Mentorship, समग्र विकास।</p>
+        <p class="hdesc en">Anupam Takshashila Vidyapith — Bihar's premier CBSE-oriented school. Play School to Class VIII. Digital classrooms, IIT-IIM mentorship, holistic development. Nirmali, Supaul.</p>
+        <div class="hctas">
+          <button class="btn bg blg" onclick="go('admissions')"><span class="hi">नामांकन 2026-27 करें →</span><span class="en">Apply for Admission 2026-27 →</span></button>
+          <button class="btn bo blg" onclick="go('about')"><span class="hi">विद्यालय के बारे में</span><span class="en">Discover Our School</span></button>
+        </div>
+        <div class="hstats">
+          <div><div class="snum">100+</div><div class="slbl hi">छात्र नामांकित</div><div class="slbl en">Students</div></div>
+          <div><div class="snum">500+</div><div class="slbl hi">जीवन बदले</div><div class="slbl en">Lives Changed</div></div>
+          <div><div class="snum">12+</div><div class="slbl hi">अनुभवी शिक्षक</div><div class="slbl en">Faculty</div></div>
+          <div><div class="snum">91%</div><div class="slbl hi">ओलंपियाड सफलता</div><div class="slbl en">Olympiad Rate</div></div>
+          <div><div class="snum">5+</div><div class="slbl hi">वर्षों का अनुभव</div><div class="slbl en">Years</div></div>
+        </div>
+      </div>
+      <div class="hright">
+        <div class="hmain"><img fetchpriority="high" src="/images/atv-nirmali-cultural-celebration.webp" alt="ATV Nirmali Cultural Celebration — Students and Teachers"></div>
+        <div class="hpills">
+          <div class="hpill"><div class="hpic">🎓</div><div class="hpt hi">CBSE पाठ्यक्रम</div><div class="hpt en">CBSE Curriculum</div><div class="hps hi">प्ले स्कूल–VIII</div><div class="hps en">Play School–VIII</div></div>
+          <div class="hpill"><div class="hpic">💻</div><div class="hpt hi">डिजिटल शिक्षा</div><div class="hpt en">Digital Learning</div><div class="hps">Smart Classrooms</div></div>
+          <div class="hpill"><div class="hpic">🏆</div><div class="hpt hi">प्रतियोगी परीक्षा</div><div class="hpt en">Competitive Prep</div><div class="hps hi">नवोदय · सैनिक</div><div class="hps en">Navodaya · Sainik</div></div>
+          <div class="hpill"><div class="hpic">🌟</div><div class="hpt">IIT-IIM Mentorship</div><div class="hps hi">कोशी प्रदेश में पहली बार</div><div class="hps en">First in Koshi Pradesh</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLD STRIP -->
+<div class="strip"><div class="strip-in">
+  <span class="sitem hi">प्रवेश प्रारंभ 2026-27 <span class="sdot"></span></span>
+  <span class="sitem hi">91% ओलंपियाड सफलता <span class="sdot"></span></span>
+  <span class="sitem hi">IIT-IIM Mentorship Program <span class="sdot"></span></span>
+  <span class="sitem hi">बिहार सरकार मान्यता प्राप्त <span class="sdot"></span></span>
+  <span class="sitem hi">प्ले स्कूल से कक्षा VIII <span class="sdot"></span></span>
+  <span class="sitem en">Admissions Open 2026-27 <span class="sdot"></span></span>
+  <span class="sitem en">91% Olympiad Success Rate <span class="sdot"></span></span>
+  <span class="sitem en">IIT-IIM Style Mentorship <span class="sdot"></span></span>
+  <span class="sitem en">Bihar Govt. Registered <span class="sdot"></span></span>
+  <span class="sitem en">Play School to Class VIII <span class="sdot"></span></span>
+  <span class="sitem hi">प्रवेश प्रारंभ 2026-27 <span class="sdot"></span></span>
+  <span class="sitem hi">91% ओलंपियाड सफलता <span class="sdot"></span></span>
+  <span class="sitem hi">IIT-IIM Mentorship Program <span class="sdot"></span></span>
+  <span class="sitem en">Admissions Open 2026-27 <span class="sdot"></span></span>
+  <span class="sitem en">91% Olympiad Success Rate <span class="sdot"></span></span>
+  <span class="sitem en">IIT-IIM Style Mentorship <span class="sdot"></span></span>
+</div>
+<!-- QUOTES CAROUSEL -->
+<div class="quote-strip">
+  <div class="quote-scroll">
+    <div class="quote-card"><div class="quote-text">"निर्मली का अग्रणी संस्थान, जहाँ कल के कर्णधार आकार लेते हैं।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <div class="quote-card"><div class="quote-text">"सक्षम नेतृत्व और उन्नत भविष्य के निर्माण में समर्पित।"</div><div class="quote-attr">— ATV, निर्मली</div></div>
+    <div class="quote-card"><div class="quote-text">"आधुनिक शिक्षा और सुदृढ़ संस्कारों का संगम।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <div class="quote-card"><div class="quote-text">"शिक्षा सबसे सशक्त हथियार है जिससे आप दुनिया बदल सकते हैं।"</div><div class="quote-attr">— नेल्सन मंडेला</div></div>
+    <div class="quote-card"><div class="quote-text">"हर बच्चा एक विशेष प्रतिभा के साथ जन्म लेता है, हमारा लक्ष्य उसे निखारना है।"</div><div class="quote-attr">— ATV दर्शन</div></div>
+    <div class="quote-card"><div class="quote-text">"विद्या ददाति विनयम्।"</div><div class="quote-attr">— संस्कृत सुभाषित</div></div>
+    <div class="quote-card"><div class="quote-text">"आज के छात्र ही कल के राष्ट्र निर्माता हैं।"</div><div class="quote-attr">— ATV, निर्मली</div></div>
+    <div class="quote-card"><div class="quote-text">"सपनों को उड़ान दें, और शिक्षा को अपनी पहचान बनाएं।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <div class="quote-card"><div class="quote-text">"जहाँ अनुशासन, समर्पण और ज्ञान का संगम होता है, वहीँ सफलता होती है।"</div><div class="quote-attr">— ATV दर्शन</div></div>
+    <div class="quote-card"><div class="quote-text">"ज्ञान के साथ संस्कार ही सच्ची शिक्षा की पहचान है।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <!-- duplicate for seamless loop -->
+    <div class="quote-card"><div class="quote-text">"निर्मली का अग्रणी संस्थान, जहाँ कल के कर्णधार आकार लेते हैं।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <div class="quote-card"><div class="quote-text">"सक्षम नेतृत्व और उन्नत भविष्य के निर्माण में समर्पित।"</div><div class="quote-attr">— ATV, निर्मली</div></div>
+    <div class="quote-card"><div class="quote-text">"आधुनिक शिक्षा और सुदृढ़ संस्कारों का संगम।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+    <div class="quote-card"><div class="quote-text">"शिक्षा सबसे सशक्त हथियार है जिससे आप दुनिया बदल सकते हैं।"</div><div class="quote-attr">— नेल्सन मंडेला</div></div>
+    <div class="quote-card"><div class="quote-text">"हर बच्चा एक विशेष प्रतिभा के साथ जन्म लेता है, हमारा लक्ष्य उसे निखारना है।"</div><div class="quote-attr">— ATV दर्शन</div></div>
+    <div class="quote-card"><div class="quote-text">"विद्या ददाति विनयम्।"</div><div class="quote-attr">— संस्कृत सुभाषित</div></div>
+    <div class="quote-card"><div class="quote-text">"आज के छात्र ही कल के राष्ट्र निर्माता हैं।"</div><div class="quote-attr">— ATV, निर्मली</div></div>
+    <div class="quote-card"><div class="quote-text">"सपनों को उड़ान दें, और शिक्षा को अपनी पहचान बनाएं।"</div><div class="quote-attr">— अनुपम तक्षशिला विद्यापीठ</div></div>
+  </div>
+</div>
+
+<!-- WHY CHOOSE -->
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">हमें क्यों चुनें</span><span class="badge en">Why Choose Us</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">आधुनिक शिक्षा, भारतीय मूल्यों में जड़ी</h2>
+    <h2 class="hl mt1 en">Modern Learning Rooted in Indian Values</h2>
+    <div class="divl divc"></div>
+    <p style="font-size:15px;color:var(--t3);max-width:560px;margin:0 auto" class="hi" style="font-family:'Tiro Devanagari Hindi',serif">हम शैक्षणिक उत्कृष्टता को व्यक्तिगत मार्गदर्शन के साथ जोड़ते हैं।</p>
+    <p style="font-size:15px;color:var(--t3);max-width:560px;margin:0 auto" class="en">We combine academic rigour with mentorship — preparing every child for a purposeful life.</p>
+  </div>
+  <div class="wgrid mt3">
+    <div class="wcard fu"><div class="wic">🎓</div><h3 class="hi">CBSE उन्मुख पाठ्यक्रम</h3><h3 class="en">CBSE-Oriented Curriculum</h3><p class="hi">राष्ट्रीय मानकों के अनुरूप संरचित शिक्षा। हर कक्षा में मजबूत नींव।</p><p class="en">Structured academics aligned with national standards. Strong foundations every year.</p></div>
+    <div class="wcard fu"><div class="wic">💻</div><h3 class="hi">डिजिटल एवं कंप्यूटर शिक्षा</h3><h3 class="en">Digital & Computer Education</h3><p class="hi">स्मार्ट क्लासरूम और कंप्यूटर लैब। निर्मली के बच्चों को डिजिटल युग के लिए तैयार करना।</p><p class="en">Smart classrooms and computer labs bridging the technology gap for Nirmali's children.</p></div>
+    <div class="wcard fu"><div class="wic">🏆</div><h3 class="hi">91% ओलंपियाड सफलता</h3><h3 class="en">91% Olympiad Success</h3><p class="hi">नवोदय, सैनिक स्कूल, R.K. Mission, BHU के लिए विशेष कोचिंग। प्रमाणित सफलता दर।</p><p class="en">Special coaching for Navodaya, Sainik School, R.K. Mission, BHU. Proven 91% rate.</p></div>
+    <div class="wcard fu"><div class="wic">🌟</div><h3>IIT-IIM Mentorship</h3><p class="hi">कोशी प्रदेश में पहली बार IIT-IIM के तर्ज पर परामर्श। IIT, IIM, Medical के Mentors।</p><p class="en">First in Koshi Pradesh — IIT-IIM style mentorship with mentors from IIT, IIM, medical colleges.</p></div>
+    <div class="wcard fu"><div class="wic">🌱</div><h3 class="hi">समग्र विकास</h3><h3 class="en">Holistic Development</h3><p class="hi">खेल, कला, नैतिक शिक्षा, मौखिक अंग्रेजी — हर बच्चे का सर्वांगीण विकास।</p><p class="en">Sports, arts, spoken English, moral education — every child's all-round development.</p></div>
+    <div class="wcard fu"><div class="wic">🔒</div><h3 class="hi">सुरक्षित स्मार्ट कैंपस</h3><h3 class="en">Safe & Smart Campus</h3><p class="hi">24×7 CCTV, मिनरल वाटर, स्कूल बस — हर बच्चे के लिए सुरक्षित वातावरण।</p><p class="en">CCTV 24×7, mineral water, school transport — a safe sanctuary for every child.</p></div>
+  </div>
+</div></section>
+
+<!-- IMPACT -->
+<div class="impact"><div class="con"><div class="impg" style="grid-template-columns:repeat(5,1fr)">
+  <div class="impi fu"><div class="impn">100+</div><div class="impl hi">नामांकित छात्र</div><div class="impl en">Students Enrolled</div></div>
+  <div class="impi fu"><div class="impn">500+</div><div class="impl hi">जीवन बदले अब तक</div><div class="impl en">Lives Changed</div></div>
+  <div class="impi fu"><div class="impn">12+</div><div class="impl hi">अनुभवी शिक्षक</div><div class="impl en">Expert Faculty</div></div>
+  <div class="impi fu"><div class="impn">91%</div><div class="impl hi">ओलंपियाड सफलता</div><div class="impl en">Olympiad Success</div></div>
+  <div class="impi fu"><div class="impn">5+</div><div class="impl hi">वर्षों की उत्कृष्टता</div><div class="impl en">Years Excellence</div></div>
+</div></div></div>
+
+<!-- PRINCIPAL -->
+<section class="sec" style="background:var(--cr)"><div class="con">
+  <div class="play">
+    <div class="fu">
+      <div class="pport">
+        <img loading="lazy" decoding="async" src="/images/sushil-kumar-sahu-principal-atv-nirmali.webp" alt="Sushil Kumar Sahu — Director cum Principal ATV Nirmali">
+        <div class="pover">
+          <div class="pname">सुशील कुमार साहू / Sushil Kumar Sahu</div>
+          <div class="prole">Director cum Principal</div>
+          <div class="pstats">
+            <div class="psi"><div class="psn">10+</div><div class="psl hi">वर्ष</div><div class="psl en">Years Exp</div></div>
+            <div class="psi"><div class="psn">D.El.Ed</div><div class="psl">Qualified</div></div>
+            <div class="psi"><div class="psn">500+</div><div class="psl hi">छात्र</div><div class="psl en">Students</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fu">
+      <span class="badge hi">प्रधानाचार्य का संदेश</span><span class="badge en">Principal's Message</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">शिक्षा ही सबसे शक्तिशाली हथियार है</h2>
+      <h2 class="hl mt1 en">Education is the Most Powerful Weapon</h2>
+      <div class="divl"></div>
+      <blockquote class="bq hi">"हर बच्चे में असीमित क्षमता है। ATV में हम केवल पढ़ाते नहीं — हम प्रेरित करते हैं, मार्गदर्शन करते हैं, और हर विद्यार्थी को उनकी सर्वोच्च संभावना तक पहुंचाते हैं।"</blockquote>
+      <blockquote class="bq en">"Every child carries infinite potential. At ATV, we don't just teach — we inspire, guide, and empower each student to reach their highest potential and become a responsible citizen."</blockquote>
+      <p style="font-size:14px;color:var(--t3);line-height:1.75;margin-bottom:12px" class="hi">हमारा संकल्प है कि निर्मली और सुपौल के बच्चों को किसी भी बड़े शहर के विद्यालय के समान गुणवत्तापूर्ण शिक्षा मिले।</p>
+      <p style="font-size:14px;color:var(--t3);line-height:1.75;margin-bottom:12px" class="en">Our commitment: children from Nirmali and Supaul deserve the same quality education as any metropolitan school.</p>
+      
+      <div class="inline-quote">"ज्ञान ही वह शक्ति है जो हमें अंधकार से प्रकाश की ओर ले जाती है।"</div>
+<p style="font-family:'Tiro Devanagari Hindi',serif;font-size:20px;color:var(--m);font-weight:600;margin-top:16px">आप हमें बच्चे दें, हम आपको स्वस्थ नागरिक देंगे।</p>
+      <button class="btn bp mt2" onclick="go('admissions')"><span class="hi">नामांकन करें →</span><span class="en">Enroll Today →</span></button>
+    </div>
+  </div>
+</div></section>
+
+<!-- OLYMPIAD -->
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">उपलब्धियां</span><span class="badge en">Achievements</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">विषय कौशल ओलंपियाड — <span style="color:var(--m)">91% सफलता दर</span></h2>
+    <h2 class="hl mt1 en">Subject Skill Olympiad — <span style="color:var(--m)">91% Selection Rate</span></h2>
+    <div class="divl divc"></div>
+    <p style="font-size:15px;color:var(--t3);max-width:580px;margin:0 auto" class="hi">21 में से 19 छात्रों ने सफलता प्राप्त की। सभी उत्तीर्ण छात्रों को हार्दिक बधाई!</p>
+    <p style="font-size:15px;color:var(--t3);max-width:580px;margin:0 auto" class="en">19 out of 21 students cleared the Subject Skill Olympiad. Congratulations to all!</p>
+  </div>
+  <div class="fu" style="border-radius:var(--rx);overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.15)">
+    <img loading="lazy" decoding="async" src="/images/atv-nirmali-olympiad-winners.webp" alt="ATV Olympiad Winners Nirmali — 91% Success Rate">
+  </div>
+</div></section>
+
+<!-- MENTORSHIP -->
+<section class="sec" style="background:var(--cr2)"><div class="con">
+  <div class="g2" style="gap:56px;align-items:center">
+    <div class="fu">
+      <span class="badge hi">विशेष कार्यक्रम</span><span class="badge en">Special Program</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">कोशी प्रदेश में पहली बार<br><span style="color:var(--m)">IIT-IIM Mentorship Program</span></h2>
+      <h2 class="hl mt1 en">First in Koshi Pradesh —<br><span style="color:var(--m)">IIT-IIM Style Mentorship</span></h2>
+      <div class="divl"></div>
+      <p style="font-size:15px;color:var(--t3);line-height:1.8;margin-bottom:18px" class="hi">हमारे Mentors IIT BHU, IIM Mumbai, IIM Bangalore से आते हैं। बच्चे को जीवन में सफलता के विभिन्न रास्ते बताए जाते हैं।</p>
+      <p style="font-size:14px;color:var(--t3);line-height:1.75;margin-bottom:18px" class="en">Our mentors come from IIT BHU, IIM Mumbai, IIM Bangalore. Students are guided on diverse paths to success in life.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px">
+        <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:16px;display:flex;align-items:flex-start;gap:12px;transition:var(--tr)" onmouseover="this.style.borderColor='var(--m)'" onmouseout="this.style.borderColor='var(--bd)'">
+          <span style="font-size:22px;margin-top:2px">🎓</span>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--md)">Ansu Kumar Gupta</div>
+            <div style="font-size:12px;color:var(--m);font-weight:600;margin:2px 0">MBA – IIM Mumbai</div>
+            <div style="font-size:11px;color:var(--t3)">B.Tech – MNIT Jaipur</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:16px;display:flex;align-items:flex-start;gap:12px;transition:var(--tr)" onmouseover="this.style.borderColor='var(--m)'" onmouseout="this.style.borderColor='var(--bd)'">
+          <span style="font-size:22px;margin-top:2px">💼</span>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--md)">Soumya Soni</div>
+            <div style="font-size:12px;color:var(--m);font-weight:600;margin:2px 0">MBA – IIM Bangalore</div>
+            <div style="font-size:11px;color:var(--t3)">B.Tech – IIT BHU</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:16px;display:flex;align-items:flex-start;gap:12px;transition:var(--tr)" onmouseover="this.style.borderColor='var(--m)'" onmouseout="this.style.borderColor='var(--bd)'">
+          <span style="font-size:22px;margin-top:2px">🩺</span>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--md)">Rohan Gupta</div>
+            <div style="font-size:12px;color:var(--m);font-weight:600;margin:2px 0">MD – SNMC Agra</div>
+            <div style="font-size:11px;color:var(--t3)">MBBS – PMCH Patna</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:16px;display:flex;align-items:flex-start;gap:12px;transition:var(--tr)" onmouseover="this.style.borderColor='var(--m)'" onmouseout="this.style.borderColor='var(--bd)'">
+          <span style="font-size:22px;margin-top:2px">💻</span>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--md)">Mohan Kumar</div>
+            <div style="font-size:12px;color:var(--m);font-weight:600;margin:2px 0">Founder – Matiks</div>
+            <div style="font-size:11px;color:var(--t3)">Founder – Matiks · B.Tech – IIT Guwahati</div>
+          </div>
+        </div>
+      </div>
+      <button class="btn bp" onclick="go('blog')"><span class="hi">पूरी जानकारी →</span><span class="en">Learn More →</span></button>
+    </div>
+    <div class="fu"><div style="border-radius:var(--rx);overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.2)">
+      <img loading="lazy" decoding="async" src="/images/atv-nirmali-iit-iim-mentorship.webp" alt="IIT-IIM Mentorship Program ATV Nirmali Koshi Pradesh" style="width:100%;object-fit:contain;background:var(--md)">
+    </div></div>
+  </div>
+</div></section>
+
+<!-- TESTIMONIALS -->
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">अभिभावकों की राय</span><span class="badge en">Parent Testimonials</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">निर्मली के सैकड़ों परिवारों का विश्वास</h2>
+    <h2 class="hl mt1 en">Trusted by Hundreds of Families in Nirmali</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="tgrid">
+    <div class="tcrd2 fu"><div class="tcs">★★★★★</div><div class="tcq">"</div>
+      <p class="tctxt hi">मेरे बेटे का ओलंपियाड में चयन हुआ। शिक्षक बहुत समर्पित हैं और व्यक्तिगत ध्यान देते हैं। ATV में नामांकन हमारे परिवार का सबसे अच्छा निर्णय था।</p>
+      <p class="tctxt en">My son got selected in the Olympiad. Teachers are very dedicated and give personal attention. ATV admission was the best decision for our family.</p>
+      <div class="tcauth"><div class="tcav2" style="background:linear-gradient(135deg,var(--m),var(--gd))">RK</div><div><div class="tcnm2">रमेश कुमार सिंह</div><div class="tcrl hi">अभिभावक · कक्षा V</div><div class="tcrl en">Parent · Class V</div></div></div>
+    </div>
+    <div class="tcrd2 fu"><div class="tcs">★★★★★</div><div class="tcq">"</div>
+      <p class="tctxt hi">निर्मली में डिजिटल क्लासरूम की उम्मीद नहीं थी। मेरी बेटी स्कूल से प्यार करती है। परिसर बहुत सुरक्षित और स्वच्छ है।</p>
+      <p class="tctxt en">Never expected digital classrooms in Nirmali. My daughter loves school. The campus is very safe and clean.</p>
+      <div class="tcauth"><div class="tcav2" style="background:linear-gradient(135deg,var(--nv),var(--nvm))">SD</div><div><div class="tcnm2">सुनीता देवी</div><div class="tcrl hi">अभिभावक · कक्षा III</div><div class="tcrl en">Parent · Class III</div></div></div>
+    </div>
+    <div class="tcrd2 fu"><div class="tcs">★★★★★</div><div class="tcq">"</div>
+      <p class="tctxt hi">IIT-IIM जैसे Mentors से मिलना निर्मली में सपना था। मेरा बेटा अब नवोदय की तैयारी आत्मविश्वास से कर रहा है।</p>
+      <p class="tctxt en">Meeting IIT-IIM mentors was beyond our dreams in Nirmali. My son is confidently preparing for Navodaya entrance.</p>
+      <div class="tcauth"><div class="tcav2" style="background:linear-gradient(135deg,#1a5a38,#2d9e60)">AM</div><div><div class="tcnm2">अरविंद मंडल</div><div class="tcrl hi">अभिभावक · कक्षा VI</div><div class="tcrl en">Parent · Class VI</div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="background:var(--cr)"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">अक्सर पूछे जाने वाले प्रश्न</span><span class="badge en">FAQ</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">अभिभावकों के सामान्य प्रश्न</h2>
+    <h2 class="hl mt1 en">Questions Parents Ask Us</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="faql">
+    <details class="faqi fu"><summary><span class="hi">निर्मली में कौन सा अच्छा स्कूल है?</span><span class="en">Which is a good school in Nirmali, Supaul?</span></summary><p class="hi">अनुपम तक्षशिला विद्यापीठ (ATV), वार्ड नं. 4, चावल मंडी, शर्मा गली, निर्मली, सुपौल (847452) — 2020 से बिहार सरकार से पंजीकृत, CBSE-आधारित पाठ्यक्रम वाला विद्यालय। प्ले स्कूल से कक्षा VIII तक, स्मार्ट क्लास, नवोदय व सैनिक स्कूल की तैयारी और IIT-IIM मेंटरशिप। संपर्क: 9006308822।</p><p class="en">Anupam Takshashila Vidyapith (ATV), Ward No. 4, Chawal Mandi, Sharma Gali, Nirmali, Supaul (847452), is a Bihar Government registered school with a CBSE-oriented curriculum, running since 2020. It offers Play School to Class VIII, smart classrooms, Navodaya and Sainik School entrance preparation, and IIT-IIM mentorship. Phone: 9006308822.</p></details>
+    <details class="faqi fu"><summary><span class="hi">ATV में कौन-कौन सी कक्षाएं हैं?</span><span class="en">Which classes does ATV Nirmali offer?</span></summary><p class="hi">प्ले स्कूल, नर्सरी, LKG, UKG और कक्षा I से VIII तक। माध्यम हिन्दी और अंग्रेज़ी।</p><p class="en">Play School, Nursery, LKG, UKG and Classes I to VIII, in Hindi and English medium.</p></details>
+    <details class="faqi fu"><summary><span class="hi">सत्र 2026-27 की फीस कितनी है?</span><span class="en">What is the fee at ATV Nirmali for 2026-27?</span></summary><p class="hi">मासिक शुल्क: नर्सरी से UKG ₹800, कक्षा I–V ₹900, कक्षा VI–VIII ₹1,000। प्रवेश के समय एकमुश्त शुल्क ₹5,500। परिवहन शुल्क दूरी के अनुसार ₹600 से ₹1,500 प्रति माह। प्रवेश परीक्षा के आधार पर मेधावी छात्रों को छात्रवृत्ति।</p><p class="en">Monthly tuition is ₹800 for Nursery to UKG, ₹900 for Classes I–V and ₹1,000 for Classes VI–VIII. One-time charges at admission total ₹5,500. Transport costs ₹600 to ₹1,500 per month depending on distance. Scholarships are given to meritorious students based on the admission test.</p></details>
+    <details class="faqi fu"><summary><span class="hi">क्या ATV में नवोदय और सैनिक स्कूल की तैयारी होती है?</span><span class="en">Does ATV prepare students for Navodaya and Sainik School?</span></summary><p class="hi">हाँ। जवाहर नवोदय विद्यालय (JNVST), सैनिक स्कूल (AISSEE), राष्ट्रीय मिलिट्री स्कूल, RIMC और R.K. मिशन प्रवेश परीक्षाओं की विशेष तैयारी। कक्षा V–VII के लिए विशेष बैच।</p><p class="en">Yes. ATV runs special preparation for the Jawahar Navodaya Vidyalaya Selection Test (JNVST), Sainik School (AISSEE), Rashtriya Military School, RIMC and R.K. Mission entrance exams, with a special batch for Classes V–VII.</p></details>
+    <details class="faqi fu"><summary><span class="hi">क्या आस-पास के गाँवों से स्कूल बस की सुविधा है?</span><span class="en">Is school transport available from nearby villages?</span></summary><p class="hi">हाँ, निर्मली और आस-पास के क्षेत्रों के लिए सुरक्षित स्कूल बस सेवा है। शुल्क दूरी के अनुसार: 0–5 km ₹600–₹800, 5–8 km ₹900, 8–10 km ₹1,100, 10–15 km ₹1,300, 15 km से अधिक ₹1,500 प्रति माह। अपना रूट जानने के लिए 9006308822 पर कॉल करें।</p><p class="en">Yes, ATV runs a safe school bus service around Nirmali and nearby areas. Monthly fee by distance: 0–5 km ₹600–₹800, 5–8 km ₹900, 8–10 km ₹1,100, 10–15 km ₹1,300, above 15 km ₹1,500. Call 9006308822 to check your route.</p></details>
+    <details class="faqi fu"><summary><span class="hi">विद्यालय का समय क्या है?</span><span class="en">What are the school timings?</span></summary><p class="hi">सोमवार से शनिवार, सुबह 7:30 से दोपहर 2:00 बजे तक। कार्यालय सोमवार–शनिवार सुबह 9 से शाम 5 बजे तक खुला रहता है।</p><p class="en">Monday to Saturday, 7:30 AM to 2:00 PM. The school office is open Monday to Saturday, 9 AM to 5 PM.</p></details>
+    <details class="faqi fu"><summary><span class="hi">ATV में प्रवेश कैसे लें?</span><span class="en">How do I take admission at ATV Nirmali?</span></summary><p class="hi">सत्र 2026-27 के लिए प्रवेश प्रारंभ है। वेबसाइट पर पूछताछ फॉर्म भरें या 9006308822 / 8789724803 पर कॉल या WhatsApp करें, फिर विद्यालय भ्रमण कर पंजीकरण करें। जन्म प्रमाण पत्र, पिछला TC (यदि हो), 4 पासपोर्ट फोटो, आधार कार्ड और पिछली रिपोर्ट कार्ड लाएं।</p><p class="en">Admissions for 2026-27 are open. Fill the inquiry form on this website or call/WhatsApp 9006308822 or 8789724803, then visit the campus to register. Bring the birth certificate, previous school TC (if any), 4 passport photos, Aadhaar cards and the last report card.</p></details>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<div style="background:linear-gradient(160deg,var(--md),var(--m),var(--nvm));padding:72px 0;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(201,168,76,.03) 0,rgba(201,168,76,.03) 1px,transparent 0,transparent 50%);background-size:36px 36px"></div>
+  <div class="con" style="position:relative;z-index:1">
+    <div class="admbdg" style="display:inline-flex;margin-bottom:20px">🎓 <span class="hi">प्रवेश प्रारंभ 2026-27</span><span class="en">Admissions Open 2026-27</span></div>
+    <h2 style="font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(24px,4vw,50px);color:#fff;margin-bottom:14px" class="hi">आप हमें बच्चे दें,<br>हम आपको स्वस्थ नागरिक देंगे</h2>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,50px);color:#fff;margin-bottom:14px" class="en">Give Your Child the Best Start —<br>Anupam Takshashila Vidyapith</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.72);max-width:520px;margin:0 auto 36px" class="hi">सीमित सीटें। अभी नामांकन करें।</p>
+    <p style="font-size:16px;color:rgba(255,255,255,.72);max-width:520px;margin:0 auto 36px" class="en">Limited seats available. Secure your child's future at ATV today.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn bg blg" onclick="go('admissions')"><span class="hi">नामांकन 2026-27 →</span><span class="en">Apply 2026-27 →</span></button>
+      <a class="btn bo blg" href="https://wa.me/918789724803?text=Admission%20Inquiry%202026-27%20ATV%20Nirmali" target="_blank" rel="noopener">📲 WhatsApp</a>
+      <a class="btn bo blg" href="tel:+919006308822">📞 +91-9006308822</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div id="page-about" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">स्थापना 2020 · निर्मली, बिहार</span><span class="badge bi en">Est. 2020 · Nirmali, Bihar</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif"><span style="color:var(--gb)">अनुपम तक्षशिला विद्यापीठ</span><br>के बारे में</span><span class="en">About <span style="color:var(--gb);font-style:italic">Anupam Takshashila Vidyapith</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:#fff"><div class="con">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+    <div class="wcard fu"><div class="wic">🔭</div><h3 class="hi">हमारा लक्ष्य</h3><h3 class="en">Our Vision</h3><p class="hi">निर्मली में सबसे भरोसेमंद शिक्षण संस्थान बनना। डिजिटल रूप से साक्षर और नैतिक रूप से मजबूत नागरिक तैयार करना।</p><p class="en">To become the most trusted institution in Nirmali — producing responsible, digitally literate, morally grounded citizens.</p></div>
+    <div class="wcard fu"><div class="wic">🎯</div><h3 class="hi">हमारा मिशन</h3><h3 class="en">Our Mission</h3><p class="hi">भारतीय मूल्यों में जड़ी विश्वस्तरीय शिक्षा। ग्रामीण बिहार के हर बच्चे को डिजिटल शिक्षा, मार्गदर्शन और समग्र विकास देना।</p><p class="en">Provide world-class education rooted in Indian values — giving every child in rural Bihar digital learning, mentorship, and holistic development.</p></div>
+    <div class="wcard fu"><div class="wic">⚖️</div><h3 class="hi">हमारे मूल्य</h3><h3 class="en">Our Values</h3><p class="hi">ज्ञान, सत्य, उत्तमता, करुणा, नवाचार — ATV के पांच स्तंभ।</p><p class="en">Knowledge, Integrity, Excellence, Compassion, Innovation — the five pillars of ATV.</p></div>
+  
+  <div class="values-quote-grid fu">
+    <div class="vqcard"><div class="vqcard-icon">🌟</div><div class="vqcard-text">"निर्मली में प्रारंभिक शिक्षा, ज्ञान और चरित्र निर्माण का विश्वसनीय नाम।"</div></div>
+    <div class="vqcard"><div class="vqcard-icon">🎯</div><div class="vqcard-text">"सुरक्षित वातावरण, संस्कारित बचपन, और उज्ज्वल कल का संकल्प।"</div></div>
+    <div class="vqcard"><div class="vqcard-icon">📚</div><div class="vqcard-text">"शिक्षा केवल किताबों में नहीं, बल्कि अच्छे चरित्र और संस्कारों में है।"</div></div>
+  </div>
+</div>
+</div></section>
+<section class="sec" style="background:var(--cr)"><div class="con">
+  <div class="g2" style="gap:64px;align-items:start">
+    <div class="fu">
+      <span class="badge hi">हमारी यात्रा</span><span class="badge en">Our Journey</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">विद्यालय का इतिहास</h2>
+      <h2 class="hl mt1 en">School History & Milestones</h2>
+      <div class="divl"></div>
+      <div style="position:relative;padding-left:36px;margin-top:28px">
+        <div style="position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--m),var(--g),transparent)"></div>
+        <div style="position:relative;margin-bottom:28px"><div style="position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--m);border:3px solid var(--cr)"></div><div style="font-size:11px;font-weight:700;color:var(--m);margin-bottom:3px">2020</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="hi">स्थापना एवं पंजीकरण</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="en">Foundation & Registration</div><p style="font-size:13px;color:var(--t3)" class="hi">बिहार सरकार से पंजीकृत (Reg. 20811012024118185825)। नर्सरी से कक्षा V तक शुरुआत।</p><p style="font-size:13px;color:var(--t3)" class="en">Registered with Bihar Govt. Classes from Nursery to Class V began.</p></div>
+        <div style="position:relative;margin-bottom:28px"><div style="position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--m);border:3px solid var(--cr)"></div><div style="font-size:11px;font-weight:700;color:var(--m);margin-bottom:3px">2021</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="hi">डिजिटल बुनियादी ढांचा</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="en">Digital Infrastructure</div><p style="font-size:13px;color:var(--t3)" class="hi">कंप्यूटर लैब और स्मार्ट क्लासरूम। मौखिक अंग्रेजी कार्यक्रम शुरू।</p><p style="font-size:13px;color:var(--t3)" class="en">Computer lab and smart classroom installed. Spoken English program launched.</p></div>
+        <div style="position:relative;margin-bottom:28px"><div style="position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--m);border:3px solid var(--cr)"></div><div style="font-size:11px;font-weight:700;color:var(--m);margin-bottom:3px">2022</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="hi">कक्षा VIII तक विस्तार</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="en">Expanded to Class VIII</div><p style="font-size:13px;color:var(--t3)" class="hi">नवोदय, सैनिक स्कूल, R.K. Mission, BHU कोचिंग शुरू।</p><p style="font-size:13px;color:var(--t3)" class="en">Competitive coaching for Navodaya, Sainik School, R.K. Mission, BHU commenced.</p></div>
+        <div style="position:relative;margin-bottom:28px"><div style="position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--m);border:3px solid var(--cr)"></div><div style="font-size:11px;font-weight:700;color:var(--m);margin-bottom:3px">2023–24</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="hi">91% ओलंपियाड सफलता</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="en">91% Olympiad Success</div><p style="font-size:13px;color:var(--t3)" class="hi">IIT-IIM Mentorship Program लॉन्च — कोशी प्रदेश में पहली बार।</p><p style="font-size:13px;color:var(--t3)" class="en">IIT-IIM Mentorship Program launched — first in Koshi Pradesh.</p></div>
+        <div style="position:relative"><div style="position:absolute;left:-30px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--g);border:3px solid var(--cr)"></div><div style="font-size:11px;font-weight:700;color:var(--g);margin-bottom:3px">2025–26</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="hi">नामांकन 2026-27 खुला</div><div style="font-size:15px;font-weight:700;color:var(--t1);margin-bottom:3px" class="en">Admissions 2026-27 Open</div><p style="font-size:13px;color:var(--t3)" class="hi">बिहार के सबसे भरोसेमंद विद्यालय का निर्माण जारी।</p><p style="font-size:13px;color:var(--t3)" class="en">Building Bihar's most trusted school, one student at a time.</p></div>
+      </div>
+    </div>
+    <div class="fu">
+      <span class="badge hi">संस्थान विवरण</span><span class="badge en">Institution Profile</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">विद्यालय की जानकारी</h2>
+      <h2 class="hl mt1 en">School Details</h2>
+      <div class="divl"></div>
+      <div style="margin-top:16px">
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Full Name</span><span style="color:var(--t1);font-weight:500;font-size:13px">Anupam Takshashila Vidyapith</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Established</span><span style="color:var(--t1);font-weight:500">2020</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Reg. No.</span><span style="color:var(--t1);font-weight:500;font-size:12px">20811012024118185825</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Board</span><span style="color:var(--t1);font-weight:500">CBSE-Oriented</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Medium</span><span style="color:var(--t1);font-weight:500">Hindi & English</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">Classes</span><span style="color:var(--t1);font-weight:500">Play School – Class VIII</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--bd);font-size:14px"><span style="color:var(--t3);font-weight:600">School Hours</span><span style="color:var(--t1);font-weight:500">Mon–Sat 7:30–2:00 PM</span></div>
+        <div style="display:flex;justify-content:space-between;padding:11px 0;font-size:14px"><span style="color:var(--t3);font-weight:600">Status</span><span style="color:var(--m);font-weight:700">Bihar Sarkar Manyata Prapt ✓</span></div>
+      </div>
+      <div style="margin-top:24px;border-radius:var(--rl);overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.15)">
+        <img loading="lazy" decoding="async" src="/images/atv-nirmali-school-poster.webp" alt="ATV Nirmali School Poster">
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- TEACHERS -->
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">हमारे शिक्षक</span><span class="badge en">Our Faculty</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">समर्पित एवं योग्य शिक्षक</h2>
+    <h2 class="hl mt1 en">Dedicated & Qualified Faculty</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="tcgrid">
+    <div class="tcrd fu"><div class="tcav">SS</div><div class="tcnm">Sushil Kumar Sahu</div><div class="tcql">Graduation + D.El.Ed · 10 Years Exp.</div><div class="tcps"><span class="tcp ph">Head Teacher / Principal</span><span class="tcp pt">Trained</span><span class="tcp pe">10 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">BJ</div><div class="tcnm">Basuki Nath Jha</div><div class="tcql">Graduation + B.Ed · 5 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">5 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">CK</div><div class="tcnm">Chandrakala Kumari</div><div class="tcql">Graduation + D.El.Ed · 2 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">2 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">RK</div><div class="tcnm">Rekha Kumari</div><div class="tcql">Graduation + B.Ed · 7 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">7 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">RU</div><div class="tcnm">Rubi Kumari</div><div class="tcql">Graduation + B.Ed · 3 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">3 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">SC</div><div class="tcnm">Sachin Kumar Sah</div><div class="tcql">Graduation + B.Ed · 4 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">4 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">AY</div><div class="tcnm">Arbind Kumar Yadav</div><div class="tcql">Post Graduation + D.El.Ed · 3 Years Exp.</div><div class="tcps"><span class="tcp pt">Trained</span><span class="tcp pe">3 Yrs</span></div></div>
+    <div class="tcrd fu"><div class="tcav">RA</div><div class="tcnm">Rahul Agarwal</div><div class="tcql">B.Com, Pursuing M.Com & PGDCA · 5 Years Exp.</div><div class="tcps"><span class="tcp pc">Computer Teacher</span><span class="tcp pe">5 Yrs</span></div></div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== ADMISSIONS ===== -->
+<div id="page-admissions" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">प्रवेश प्रारंभ 2026-27</span><span class="badge bi en">Admissions Open 2026-27</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">अपने बच्चे की<br><span style="color:var(--gb)">यात्रा शुरू करें</span></span><span class="en">Begin Your Child's<br><span style="color:var(--gb);font-style:italic">Journey of Excellence</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="adlay">
+    <div class="fu">
+      <span class="badge hi">प्रवेश प्रक्रिया</span><span class="badge en">Admission Process</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">4 सरल चरणों में प्रवेश</h2>
+      <h2 class="hl mt1 en">Simple 4-Step Admission</h2>
+      <div class="divl"></div>
+      <div style="margin-top:24px">
+        <div class="step"><div class="stepl"><div class="stepn">1</div><div class="stepln"></div></div><div class="stepb"><h4 class="hi">पूछताछ करें</h4><h4 class="en">Submit Inquiry</h4><p class="hi">फॉर्म भरें या +91-9006308822 पर कॉल करें। 24 घंटे में संपर्क होगा।</p><p class="en">Fill the form or call +91-9006308822. Our team contacts you within 24 hours.</p></div></div>
+        <div class="step"><div class="stepl"><div class="stepn">2</div><div class="stepln"></div></div><div class="stepb"><h4 class="hi">विद्यालय भ्रमण</h4><h4 class="en">Campus Visit</h4><p class="hi">विद्यालय देखें, शिक्षकों से मिलें, ATV का वातावरण अनुभव करें।</p><p class="en">Visit school, meet faculty, experience the ATV learning environment.</p></div></div>
+        <div class="step"><div class="stepl"><div class="stepn">3</div><div class="stepln"></div></div><div class="stepb"><h4 class="hi">पंजीकरण एवं दस्तावेज</h4><h4 class="en">Registration & Documents</h4><p class="hi">फॉर्म भरें, दस्तावेज जमा करें, और पंजीकरण शुल्क भुगतान करें।</p><p class="en">Submit registration form, documents, and pay registration fee.</p></div></div>
+        <div class="step"><div class="stepl"><div class="stepn">4</div></div><div class="stepb"><h4 class="hi">ATV परिवार में स्वागत!</h4><h4 class="en">Welcome to ATV!</h4><p class="hi">आपका बच्चा ATV परिवार का हिस्सा। डायरी, यूनिफॉर्म, पुस्तक सूची मिलेगी।</p><p class="en">Your child joins the ATV family. Receive diary, uniform list, and book list.</p></div></div>
+      </div>
+      <div style="background:var(--cr);border:1px solid var(--bd);border-radius:var(--rm);padding:18px;margin-top:20px">
+        <h4 style="font-size:15px;color:var(--md);margin-bottom:10px" class="hi">आवश्यक दस्तावेज</h4><h4 style="font-size:15px;color:var(--md);margin-bottom:10px" class="en">Required Documents</h4>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <p style="font-size:13px;color:var(--t3);display:flex;gap:8px"><span style="color:var(--m)">✓</span><span class="hi">जन्म प्रमाण पत्र (मूल + फोटोकॉपी)</span><span class="en">Birth Certificate (original + photocopy)</span></p>
+          <p style="font-size:13px;color:var(--t3);display:flex;gap:8px"><span style="color:var(--m)">✓</span><span class="hi">पिछले विद्यालय का TC (यदि लागू हो)</span><span class="en">Previous School TC (if applicable)</span></p>
+          <p style="font-size:13px;color:var(--t3);display:flex;gap:8px"><span style="color:var(--m)">✓</span><span class="hi">4 पासपोर्ट साइज फोटो (बच्चे + अभिभावक)</span><span class="en">4 Passport Photos (child + parent)</span></p>
+          <p style="font-size:13px;color:var(--t3);display:flex;gap:8px"><span style="color:var(--m)">✓</span><span class="hi">आधार कार्ड (बच्चे + अभिभावक)</span><span class="en">Aadhar Card (child + parent)</span></p>
+          <p style="font-size:13px;color:var(--t3);display:flex;gap:8px"><span style="color:var(--m)">✓</span><span class="hi">पिछले वर्ष की रिपोर्ट कार्ड</span><span class="en">Previous year Report Card</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="fbx fu">
+      <h2 class="ftit hi">नामांकन पूछताछ</h2><h2 class="ftit en">Admission Inquiry</h2>
+      <p class="fsub2 hi">उज्ज्वल कल के लिए अभी नामांकन करें — 24 घंटे में कॉलबैक।</p>
+      <p class="fsub2 en">Fill the form and we'll call you back within 24 hours.</p>
+      <div id="admFrm">
+        <div class="fr2">
+          <div class="fg"><label class="fl hi">अभिभावक का नाम *</label><label class="fl en">Parent's Name *</label><input class="fi" type="text" id="pN" maxlength="80" autocomplete="name" placeholder="Full name / पूरा नाम"></div>
+          <div class="fg"><label class="fl hi">बच्चे का नाम *</label><label class="fl en">Child's Name *</label><input class="fi" type="text" id="cN" maxlength="80" placeholder="Child's name"></div>
+        </div>
+        <div class="fr2">
+          <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" id="ph" maxlength="16" inputmode="tel" autocomplete="tel" placeholder="+91 XXXXXXXXXX"></div>
+          <div class="fg"><label class="fl hi">कक्षा *</label><label class="fl en">Class *</label>
+            <select class="fi" id="cl"><option value="">-- Select / चुनें --</option>
+              <option>Play School / Nursery</option><option>LKG</option><option>UKG</option>
+              <option>Class I</option><option>Class II</option><option>Class III</option>
+              <option>Class IV</option><option>Class V</option><option>Class VI</option>
+              <option>Class VII</option><option>Class VIII</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label class="fl hi">गाँव / क्षेत्र *</label><label class="fl en">Village / Area *</label><input class="fi" type="text" id="vl" maxlength="80" placeholder="Your village / आपका गाँव"></div>
+        <div class="fg"><label class="fl hi">जन्म तिथि</label><label class="fl en">Date of Birth</label><input class="fi" type="date" id="db"></div>
+        <div class="fg"><label class="fl hi">कोई प्रश्न</label><label class="fl en">Any Query</label><textarea class="fi" id="aq" rows="3" maxlength="1000" placeholder="Any question..." style="resize:none"></textarea></div><input type="text" name="_honey" id="admHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <button class="fsbtn" id="abtn" onclick="submitAdm(this)"><span class="hi">नामांकन पूछताछ भेजें →</span><span class="en">Submit Inquiry — Get Callback →</span></button>
+        <p class="fnote"><strong>+91-9006308822 / +91-8789724803</strong></p>
+      </div>
+      <div class="fok" id="admOk"><div style="font-size:36px;margin-bottom:12px">✅</div>
+        <h4 style="color:#2d6e2d;font-size:17px;margin-bottom:6px" class="hi">पूछताछ सफलतापूर्वक भेजी गई!</h4>
+        <h4 style="color:#2d6e2d;font-size:17px;margin-bottom:6px" class="en">Inquiry Submitted Successfully!</h4>
+        <p style="font-size:13px;color:var(--t3)">24 घंटे में कॉलबैक / We'll call back within 24 hours — <strong>+91-9006308822</strong></p>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- FEE STRUCTURE -->
+<section class="sec" style="background:var(--cr2)"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">शुल्क संरचना</span><span class="badge en">Fee Structure</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">शुल्क संरचना — सत्र 2026-27</h2>
+    <h2 class="hl mt1 en">Fee Structure — Session 2026-27</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="g3" style="align-items:start">
+    <div class="fu">
+      <div class="feebx">
+        <div class="feehd"><span class="hi">प्रवेश के समय देय शुल्क</span><span class="en">One-Time Admission Fees</span></div>
+        <table class="feetb">
+          <tr><td class="hi">प्रवेश शुल्क</td><td class="en">Admission Fee</td><td>₹1,500</td></tr>
+          <tr><td class="hi">पंजीकरण शुल्क</td><td class="en">Registration Fee</td><td>₹1,000</td></tr>
+          <tr><td class="hi">विकास शुल्क</td><td class="en">Development Fee</td><td>₹1,000</td></tr>
+          <tr><td class="hi">दस्तावेज एवं ID</td><td class="en">Documentation & ID</td><td>₹300</td></tr>
+          <tr><td class="hi">कंप्यूटर एवं पुस्तकालय</td><td class="en">Computer & Library</td><td>₹300</td></tr>
+          <tr><td class="hi">पानी एवं बिजली</td><td class="en">Water & Electricity</td><td>₹400</td></tr>
+          <tr><td class="hi">वार्षिक गतिविधियां</td><td class="en">Annual Activities</td><td>₹1,000</td></tr>
+          <tr><td class="hi">परीक्षा एवं टेस्ट</td><td class="en">Examination & Tests</td><td>₹600</td></tr>
+          <tr class="tot"><td colspan="2"><strong class="hi">कुल देय (प्रवेश के समय)</strong><strong class="en">Total Payable at Admission</strong></td><td><strong>₹5,500</strong></td></tr>
+        </table>
+      </div>
+      <div class="feenote mt1">📢 <strong class="hi">छात्रवृत्ति नोट:</strong><strong class="en">Scholarship Note:</strong><span class="hi"> प्रवेश परीक्षा के आधार पर मेधावी छात्रों को छात्रवृत्ति प्रदान की जाती है। विस्तार के लिए संपर्क करें।</span><span class="en"> Scholarships provided to meritorious students based on Admission Test. Contact school for details.</span></div>
+    </div>
+    <div class="fu">
+      <div class="feebx">
+        <div class="feehd"><span class="hi">मासिक शुल्क</span><span class="en">Monthly Fee</span></div>
+        <table class="feetb">
+          <tr><td class="hi">नर्सरी से UKG</td><td class="en">Nursery to U.KG</td><td>₹800/माह</td></tr>
+          <tr><td class="hi">कक्षा I से V</td><td class="en">Class I to V</td><td>₹900/माह</td></tr>
+          <tr><td class="hi">कक्षा VI से VIII</td><td class="en">Class VI to VIII</td><td>₹1,000/माह</td></tr>
+        </table>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--rm);padding:16px;margin-top:12px;text-align:center">
+        <p style="font-size:13px;color:var(--t3);margin-bottom:12px" class="hi">किसी भी प्रश्न के लिए संपर्क करें</p>
+        <p style="font-size:13px;color:var(--t3);margin-bottom:12px" class="en">For any fee queries, contact us</p>
+        <a href="https://wa.me/918789724803?text=Fee%20Inquiry%202026-27%20ATV%20Nirmali" target="_blank" rel="noopener" class="btn bg bsm" style="width:100%;justify-content:center">📲 WhatsApp Fee Query</a>
+      </div>
+    </div>
+    <div class="fu">
+      <div class="feebx">
+        <div class="feehd"><span class="hi">परिवहन शुल्क (दूरी अनुसार)</span><span class="en">Transport Fee (by Distance)</span></div>
+        <table class="feetb">
+          <tr><td>0–5 km</td><td>₹600–₹800/माह</td></tr>
+          <tr><td>5–8 km</td><td>₹900/माह</td></tr>
+          <tr><td>8–10 km</td><td>₹1,100/माह</td></tr>
+          <tr><td>10–15 km</td><td>₹1,300/माह</td></tr>
+          <tr><td class="hi">15 km से अधिक</td><td class="en">Above 15 km</td><td>₹1,500/माह</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== FACILITIES ===== -->
+<div id="page-facilities" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">विश्वस्तरीय बुनियादी ढांचा</span><span class="badge bi en">World-Class Infrastructure</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">हमारी<br><span style="color:var(--gb)">सुविधाएं</span></span><span class="en">Our<br><span style="color:var(--gb);font-style:italic">Facilities</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:var(--cr2)"><div class="con">
+  <div class="tc fu mb3">
+    <span class="badge hi">परिसर सुविधाएं</span><span class="badge en">Campus Facilities</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">प्रेरणादायक शिक्षा के लिए उद्देश्य-निर्मित स्थान</h2>
+    <h2 class="hl mt1 en">Purpose-Built Spaces for Inspired Learning</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="pgrid">
+    <div class="pgi wide"><img loading="lazy" decoding="async" src="/images/atv-nirmali-cultural-celebration.webp" alt="ATV Cultural Life" style="height:280px"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">सांस्कृतिक जीवन — होली उत्सव</p><p style="font-size:14px;font-weight:700" class="en">Cultural Life — Holi Festival</p></div></div>
+    <div class="pgi wide"><img loading="lazy" decoding="async" src="/images/atv-nirmali-olympiad-winners.webp" alt="ATV Olympiad" style="height:280px;object-fit:cover;object-position:top"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">ओलंपियाड विजेता</p><p style="font-size:14px;font-weight:700" class="en">Olympiad Winners</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library.webp" alt="ATV Library" style="height:200px"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय</p><p style="font-size:14px;font-weight:700" class="en">Library</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library-reading-room.webp" alt="ATV Library 2" style="height:200px"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय — पठन कक्ष</p><p style="font-size:14px;font-weight:700" class="en">Library Reading Room</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library-collection.webp" alt="ATV Library 3" style="height:200px"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय संग्रह</p><p style="font-size:14px;font-weight:700" class="en">Library Collection</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-iit-iim-mentorship.webp" alt="Mentorship" style="height:200px;object-fit:cover;object-position:top"><div class="pgov"><p style="font-size:14px;font-weight:700">IIT-IIM Mentorship</p></div></div>
+  </div>
+  <div class="g4 mt3">
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">🖥️</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">डिजिटल क्लासरूम</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Smart Classrooms</div><div style="font-size:12px;color:var(--t3)" class="hi">स्मार्ट बोर्ड एवं प्रोजेक्टर</div><div style="font-size:12px;color:var(--t3)" class="en">Smart boards & projectors</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">💻</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">कंप्यूटर लैब</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Computer Lab</div><div style="font-size:12px;color:var(--t3)" class="hi">इंटरनेट सहित आधुनिक PC</div><div style="font-size:12px;color:var(--t3)" class="en">Modern PCs with internet</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">📚</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">पुस्तकालय</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Library</div><div style="font-size:12px;color:var(--t3)" class="hi">पुस्तकें एवं संदर्भ सामग्री</div><div style="font-size:12px;color:var(--t3)" class="en">Books & reference materials</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">⚽</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">खेल का मैदान</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Sports Ground</div><div style="font-size:12px;color:var(--t3)" class="hi">क्रिकेट, फुटबॉल, कबड्डी</div><div style="font-size:12px;color:var(--t3)" class="en">Cricket, football, kabaddi</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">🚌</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">परिवहन</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Transport</div><div style="font-size:12px;color:var(--t3)" class="hi">सुरक्षित स्कूल बस सेवा</div><div style="font-size:12px;color:var(--t3)" class="en">Safe school bus service</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">🔒</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">CCTV निगरानी</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">CCTV Security</div><div style="font-size:12px;color:var(--t3)">24×7 Surveillance</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">💧</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">मिनरल वाटर</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Mineral Water</div><div style="font-size:12px;color:var(--t3)" class="hi">शुद्ध पेयजल</div><div style="font-size:12px;color:var(--t3)" class="en">Pure drinking water</div></div>
+    <div style="text-align:center;padding:22px;background:#fff;border:1px solid var(--bd);border-radius:var(--rm)" class="fu"><div style="font-size:30px;margin-bottom:10px">🌳</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="hi">हरा परिसर</div><div style="font-size:14px;font-weight:700;color:var(--md);margin-bottom:5px" class="en">Green Campus</div><div style="font-size:12px;color:var(--t3)" class="hi">स्वच्छ वातावरण</div><div style="font-size:12px;color:var(--t3)" class="en">Eco-friendly environment</div></div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== GALLERY ===== -->
+<div id="page-gallery" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">ATV की यादें</span><span class="badge bi en">Life at ATV</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">विद्यालय<br><span style="color:var(--gb)">गैलरी</span></span><span class="en">School<br><span style="color:var(--gb);font-style:italic">Gallery</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:var(--cr2)"><div class="con">
+  <div class="pgrid mt2">
+    <div class="pgi wide"><img loading="lazy" decoding="async" src="/images/atv-nirmali-olympiad-winners.webp" alt="Olympiad Winners ATV Nirmali" style="height:280px;object-fit:cover;object-position:top"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">ओलंपियाड विजेता — 91% सफलता दर</p><p style="font-size:14px;font-weight:700" class="en">Olympiad Winners — 91% Success Rate</p></div></div>
+    <div class="pgi wide"><img loading="lazy" decoding="async" src="/images/atv-nirmali-cultural-celebration.webp" alt="Cultural Celebration ATV" style="height:280px"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">होली उत्सव — सांस्कृतिक जीवन</p><p style="font-size:14px;font-weight:700" class="en">Holi Festival — Cultural Life at ATV</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library.webp" alt="ATV Library Nirmali"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय</p><p style="font-size:14px;font-weight:700" class="en">Library</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library-reading-room.webp" alt="ATV Library 2"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय — पठन कक्ष</p><p style="font-size:14px;font-weight:700" class="en">Library Reading Room</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-library-collection.webp" alt="ATV Library 3"><div class="pgov"><p style="font-size:14px;font-weight:700" class="hi">पुस्तकालय संग्रह</p><p style="font-size:14px;font-weight:700" class="en">Library Collection</p></div></div>
+    <div class="pgi"><img loading="lazy" decoding="async" src="/images/atv-nirmali-iit-iim-mentorship.webp" alt="Mentorship Program ATV" style="object-fit:cover;object-position:top"><div class="pgov"><p style="font-size:14px;font-weight:700">IIT-IIM Mentorship Program</p></div></div>
+  </div>
+  <div style="text-align:center;margin-top:36px">
+    <p style="font-size:14px;color:var(--t3);margin-bottom:16px" class="hi">हमारे Instagram पर और तस्वीरें देखें</p>
+    <p style="font-size:14px;color:var(--t3);margin-bottom:16px" class="en">See more photos on our Instagram</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="https://www.instagram.com/atv_nirmali?igsh=MWoweDV1am96ZmNxcw==" target="_blank" rel="noopener" class="btn bp">📸 @atv_nirmali on Instagram</a>
+      <a href="https://www.instagram.com/p/DI32OHAy4PY/?utm_source=ig_web_copy_link" target="_blank" rel="noopener" class="btn bom">📷 Latest Instagram Post</a>
+      <a href="https://www.facebook.com/share/1ChEcXhxNf/" target="_blank" rel="noopener" class="btn bom">📘 Facebook Page</a>
+    </div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== NOTICES ===== -->
+<div id="page-notices" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">सूचनाएं एवं अपडेट</span><span class="badge bi en">Notices & Updates</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">विद्यालय<br><span style="color:var(--gb)">सूचना पटल</span></span><span class="en">School<br><span style="color:var(--gb);font-style:italic">Notice Board</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:#fff"><div class="con">
+  <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:44px">
+    <div>
+      <h2 class="hm mb2 hi" style="font-family:'Tiro Devanagari Hindi',serif">नवीनतम सूचनाएं</h2>
+      <h2 class="hm mb2 en">Latest Notices</h2>
+      <div class="ncard fu"><div class="ndb"><div class="ndd">01</div><div class="ndm">Apr</div></div><div><span class="ntag nn hi">सूचना</span><span class="ntag nn en">Notice</span><div class="nt hi">प्रवेश प्रारंभ — सत्र 2026-27</div><div class="nt en">Admissions Open — Session 2026-27</div><div class="nd2 hi">प्ले स्कूल से कक्षा VIII तक। सीमित सीटें। +91-9006308822 / +91-8789724803</div><div class="nd2 en">Play School to Class VIII. Limited seats. +91-9006308822 / +91-8789724803</div></div></div>
+      <div class="ncard fu"><div class="ndb"><div class="ndd">15</div><div class="ndm">Jan</div></div><div><span class="ntag ne hi">परीक्षा</span><span class="ntag ne en">Exam</span><div class="nt hi">वार्षिक परीक्षा कार्यक्रम 2025-26 जारी</div><div class="nt en">Annual Exam Schedule 2025-26 Released</div><div class="nd2 hi">कक्षा I–VIII की परीक्षाएं 20 जनवरी से। हॉल टिकट विद्यालय से।</div><div class="nd2 en">Annual exams start January 20. Hall tickets from school office.</div></div></div>
+      <div class="ncard fu"><div class="ndb"><div class="ndd">26</div><div class="ndm">Jan</div></div><div><span class="ntag nev hi">कार्यक्रम</span><span class="ntag nev en">Event</span><div class="nt hi">वार्षिक खेल दिवस एवं गणतंत्र दिवस समारोह</div><div class="nt en">Annual Sports Day & Republic Day Celebration</div><div class="nd2 hi">26 जनवरी को भव्य वार्षिक दिवस। सभी अभिभावकों को आमंत्रित।</div><div class="nd2 en">Grand Annual Day on January 26. All parents cordially invited.</div></div></div>
+      <div class="ncard fu"><div class="ndb"><div class="ndd">20</div><div class="ndm">Dec</div></div><div><span class="ntag ne hi">परीक्षा</span><span class="ntag ne en">Exam</span><div class="nt hi">नवोदय एवं सैनिक स्कूल कोचिंग पंजीकरण खुला</div><div class="nt en">Navodaya & Sainik School Coaching Registration Open</div><div class="nd2 hi">कक्षा V–VII के छात्रों के लिए विशेष Batch। 91% Success Rate।</div><div class="nd2 en">Special batch for Class V–VII. 91% Proven Success Rate.</div></div></div>
+      <div class="ncard fu"><div class="ndb"><div class="ndd">20</div><div class="ndm">Dec</div></div><div><span class="ntag nev">PTM</span><div class="nt hi">अभिभावक-शिक्षक बैठक — 20 दिसंबर</div><div class="nt en">Parent-Teacher Meeting — December 20</div><div class="nd2 hi">सभी कक्षाओं के लिए अनिवार्य PTM।</div><div class="nd2 en">Mandatory PTM for all classes. One parent must attend.</div></div></div>
+    </div>
+    <div>
+      <div class="sdcard fu"><h3 class="hi" style="font-family:'Tiro Devanagari Hindi',serif">त्वरित डाउनलोड</h3><h3 class="en">Quick Downloads</h3>
+        <div class="ql"><div class="qlic">📄</div><span class="hi">विद्यालय प्रॉस्पेक्टस 2026-27</span><span class="en">School Prospectus 2026-27</span></div>
+        <div class="ql"><div class="qlic">📅</div><span class="hi">शैक्षणिक कैलेंडर</span><span class="en">Academic Calendar</span></div>
+        <div class="ql"><div class="qlic">📋</div><span class="hi">प्रवेश फॉर्म</span><span class="en">Admission Form</span></div>
+        <div class="ql"><div class="qlic">📊</div><span class="hi">शुल्क संरचना 2026-27</span><span class="en">Fee Structure 2026-27</span></div>
+        <div class="ql"><div class="qlic">📚</div><span class="hi">कक्षानुसार पुस्तक सूची</span><span class="en">Book List by Class</span></div>
+        <div class="ql"><div class="qlic">👔</div><span class="hi">यूनिफॉर्म दिशानिर्देश</span><span class="en">Uniform Guidelines</span></div>
+      </div>
+      <div class="emg fu"><h3 class="hi" style="font-family:'Tiro Devanagari Hindi',serif">संपर्क करें</h3><h3 class="en">Contact School</h3>
+        <p class="hi" style="font-size:13px;opacity:.75;margin-bottom:14px">किसी भी जरूरी सूचना के लिए कॉल करें</p>
+        <p class="en" style="font-size:13px;opacity:.75;margin-bottom:14px">For urgent notices, call or WhatsApp directly</p>
+        <div class="epi"><span>📞</span><div><div style="font-size:10px;opacity:.6;text-transform:uppercase;margin-bottom:2px">Primary</div><div class="epn">+91-9006308822</div></div></div>
+        <div class="epi"><span>📞</span><div><div style="font-size:10px;opacity:.6;text-transform:uppercase;margin-bottom:2px">Secondary</div><div class="epn">+91-8789724803</div></div></div>
+        <a href="https://wa.me/918789724803?text=Inquiry%20ATV%20Nirmali" target="_blank" rel="noopener" class="btn bg" style="width:100%;justify-content:center;margin-top:14px;display:flex">📲 WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== BLOG ===== -->
+<div id="page-blog" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">शैक्षिक संसाधन</span><span class="badge bi en">Educational Resources</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">ब्लॉग एवं<br><span style="color:var(--gb)">मार्गदर्शन</span></span><span class="en">Blog &<br><span style="color:var(--gb);font-style:italic">Guidance</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:#fff"><div class="con">
+  <div class="tc fu mb2">
+    <span class="badge hi">शैक्षिक ब्लॉग</span><span class="badge en">Educational Blog</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">प्रतियोगी परीक्षाओं की सम्पूर्ण जानकारी</h2>
+    <h2 class="hl mt1 en">Complete Guide to Competitive Examinations</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="bgrid">
+    <div class="bcard fu"><div class="bcimg">🏫</div><div class="bcbody"><span class="btag hi">नवोदय विद्यालय</span><span class="btag en">Navodaya Vidyalaya</span><h3 class="hi">JNV प्रवेश परीक्षा 2026 — पूरी तैयारी गाइड</h3><h3 class="en">JNV Entrance 2026 — Complete Preparation Guide</h3><p class="hi">कक्षा 6 के लिए selection test pattern, syllabus, और तैयारी tips।</p><p class="en">Pattern, syllabus, and preparation tips for Class 6 Navodaya entrance.</p><a href="https://navodaya.gov.in" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+    <div class="bcard fu"><div class="bcimg">⚔️</div><div class="bcbody"><span class="btag hi">सैनिक स्कूल</span><span class="btag en">Sainik School</span><h3 class="hi">AISSEE 2026 — सैनिक स्कूल प्रवेश तैयारी</h3><h3 class="en">AISSEE 2026 — Sainik School Entrance Prep</h3><p class="hi">AISSEE का पूरा syllabus और preparation strategy। Class 6 और 9।</p><p class="en">Complete AISSEE syllabus and preparation strategy for Class 6 and 9.</p><a href="https://sainikschooladmission.in" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+    <div class="bcard fu"><div class="bcimg">🕉️</div><div class="bcbody"><span class="btag">R.K. Mission</span><h3 class="hi">RK Mission प्रवेश — कैसे करें तैयारी?</h3><h3 class="en">RK Mission Entrance — How to Prepare?</h3><p class="hi">Ramakrishna Mission entrance exam की पूरी जानकारी। Pattern, syllabus।</p><p class="en">Complete information about RKM entrance exam. Pattern, syllabus, tips.</p><a href="https://rkmvu.ac.in" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+    <div class="bcard fu"><div class="bcimg">🎖️</div><div class="bcbody"><span class="btag">RIMC</span><h3 class="hi">RIMC देहरादून — प्रवेश परीक्षा गाइड</h3><h3 class="en">RIMC Dehradun — Entrance Exam Guide</h3><p class="hi">Rashtriya Indian Military College में प्रवेश के लिए सम्पूर्ण मार्गदर्शन।</p><p class="en">Complete guidance for admission to RIMC Dehradun — India's premier military school.</p><a href="https://rimc.gov.in" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+    <div class="bcard fu"><div class="bcimg">🏛️</div><div class="bcbody"><span class="btag hi">शिक्षा नीति</span><span class="btag en">Education Policy</span><h3 class="hi">NEP 2020 — बच्चों की शिक्षा पर प्रभाव</h3><h3 class="en">NEP 2020 — Impact on School Education</h3><p class="hi">राष्ट्रीय शिक्षा नीति 2020 और अभिभावकों के लिए महत्वपूर्ण जानकारी।</p><p class="en">What National Education Policy 2020 means for your child's education.</p><a href="https://education.gov.in" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+    <div class="bcard fu"><div class="bcimg">🚀</div><div class="bcbody"><span class="btag">IIT-IIM Mentorship</span><h3 class="hi">ATV का IIT-IIM Mentorship — बच्चों पर प्रभाव</h3><h3 class="en">ATV's IIT-IIM Mentorship Impact</h3><p class="hi">कैसे ATV का Mentorship Program निर्मली के बच्चों को IIT, IIM के सपने दिखा रहा है।</p><p class="en">How ATV's Mentorship Program is showing IIT, IIM dreams to Nirmali's children.</p><a href="https://www.instagram.com/atv_nirmali" target="_blank" rel="noopener"><span class="hi">पूरा पढ़ें</span><span class="en">Read More</span> →</a></div></div>
+  </div>
+  <!-- PARTNERS -->
+  <div class="tc fu" style="margin-top:72px;margin-bottom:32px">
+    <span class="badge hi">हमारे साझेदार</span><span class="badge en">Our Partners</span>
+    <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">राष्ट्रीय स्तर के शैक्षणिक साझेदार</h2>
+    <h2 class="hl mt1 en">National Level Academic Partners</h2>
+    <div class="divl divc"></div>
+  </div>
+  <div class="pgrid2">
+    <div class="pcard2 fu"><div class="pcic">🚀</div><h3>Plaksha Young Makers</h3><p class="hi">Plaksha University के सहयोग से। Technology और innovation में हाथों-हाथ अनुभव।</p><p class="en">With Plaksha University, Punjab. Hands-on tech and innovation experience for young students.</p></div>
+    <div class="pcard2 fu"><div class="pcic">🏛️</div><h3>IIT Delhi Program</h3><p class="hi">IIT Delhi के alumni के साथ। Science और Mathematics में advanced mentorship।</p><p class="en">With IIT Delhi alumni. Advanced learning and mentorship in Science and Mathematics.</p></div>
+    <div class="pcard2 fu"><div class="pcic">📚</div><h3>Navodaya Vidyalaya Prep</h3><p class="hi">JNV प्रवेश की विशेष तैयारी। Mental Ability, Arithmetic, Language की कोचिंग।</p><p class="en">Special JNV entrance prep. Coaching for Mental Ability, Arithmetic, Language tests.</p></div>
+    <div class="pcard2 fu"><div class="pcic">⚔️</div><h3>Sainik School Prep</h3><p class="hi">सैनिक स्कूल प्रवेश के लिए विशेष बैच। Maths, English, GK की गहन तैयारी।</p><p class="en">Special batches for Sainik School entrance. In-depth Maths, English, GK preparation.</p></div>
+    <div class="pcard2 fu"><div class="pcic">🕉️</div><h3>R.K. Mission & RMS</h3><p class="hi">Ramakrishna Mission और Rashtriya Military School प्रवेश की dedicated coaching।</p><p class="en">Dedicated coaching for RKM and Rashtriya Military School entrance examinations.</p></div>
+    <div class="pcard2 fu"><div class="pcic">🎖️</div><h3>RIMC Preparation</h3><p class="hi">RIMC Dehradun प्रवेश की विशेष तैयारी। भारत का प्रमुख सैन्य विद्यालय।</p><p class="en">Special preparation for RIMC Dehradun entrance — India's premier military school.</p></div>
+  </div>
+</div></section>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div id="page-contact" class="page">
+<div class="phero"><div class="con">
+  <span class="badge bi hi">संपर्क करें</span><span class="badge bi en">Get in Touch</span>
+  <h1 class="hx mt1" style="color:#fff"><span class="hi" style="font-family:'Tiro Devanagari Hindi',serif">हमसे<br><span style="color:var(--gb)">संपर्क करें</span></span><span class="en">Contact<br><span style="color:var(--gb);font-style:italic">Us</span></span></h1>
+  <div class="divl divc" style="background:linear-gradient(90deg,var(--g),var(--gb));margin-top:20px"></div>
+</div></div>
+<section class="sec" style="background:var(--cr2)"><div class="con">
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:52px">
+    <div class="fu">
+      <span class="badge hi">संपर्क जानकारी</span><span class="badge en">Contact Info</span>
+      <h2 class="hl mt1 hi" style="font-family:'Tiro Devanagari Hindi',serif">हम आपकी सहायता के लिए उपलब्ध हैं</h2>
+      <h2 class="hl mt1 en">We're Here to Help You</h2>
+      <div class="divl"></div>
+      <p style="font-size:14px;color:var(--t3);margin-bottom:20px" class="hi">हमारी टीम सोमवार–शनिवार, 9:00 AM – 5:00 PM उपलब्ध।</p>
+      <p style="font-size:14px;color:var(--t3);margin-bottom:20px" class="en">Our team is available Mon–Sat, 9 AM–5 PM for all your queries.</p>
+      <div class="cicrd"><div class="ciic">📍</div><div><div class="cilbl hi">पता</div><div class="cilbl en">Address</div><div class="cival hi">वार्ड नं. 4, चावल मंडी, शर्मा गली, निर्मली, सुपौल, बिहार — 847452</div><div class="cival en">Ward No. 4, Chawal Mandi, Sharma Gali, Nirmali, Supaul, Bihar – 847452</div></div></div>
+      <div class="cicrd"><div class="ciic">📞</div><div><div class="cilbl hi">फोन</div><div class="cilbl en">Phone</div><div class="cival">+91-9006308822 / +91-8789724803</div><div class="cisub hi">सोम–शनि, 9:00 AM – 5:00 PM</div><div class="cisub en">Mon–Sat, 9:00 AM – 5:00 PM</div></div></div>
+      <div class="cicrd"><div class="ciic">✉️</div><div><div class="cilbl">Email</div><div class="cival">atv.nirmali@gmail.com</div><div class="cisub hi">24 घंटे में जवाब</div><div class="cisub en">Reply within 24 hours</div></div></div>
+      <div class="cicrd"><div class="ciic">📲</div><div><div class="cilbl">WhatsApp</div><div class="cival">+91-8789724803</div><div class="cisub hi">तुरंत चैट करें</div><div class="cisub en">Click to chat instantly</div></div></div>
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <a href="https://www.instagram.com/atv_nirmali?igsh=MWoweDV1am96ZmNxcw==" target="_blank" rel="noopener" class="btn bp bsm">📸 Instagram</a>
+        <a href="https://www.facebook.com/share/1ChEcXhxNf/" target="_blank" rel="noopener" class="btn bom bsm">📘 Facebook</a>
+        <a href="https://www.instagram.com/p/DI32OHAy4PY/?utm_source=ig_web_copy_link" target="_blank" rel="noopener" class="btn bom bsm">📷 Latest Post</a>
+      </div>
+      <div class="mapbx"><iframe src="https://www.google.com/maps?q=26.310858,86.575209&z=16&output=embed" title="Anupam Takshashila Vidyapith, Nirmali on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;height:240px;border:0;border-radius:10px;margin-bottom:12px"></iframe>
+        <p style="font-size:13px;opacity:.7;text-align:center;padding:0 20px;margin-bottom:12px" class="hi">वार्ड नं. 4, शर्मा गली, निर्मली, सुपौल, बिहार</p>
+        <p style="font-size:13px;opacity:.7;text-align:center;padding:0 20px;margin-bottom:12px" class="en">Ward No. 4, Sharma Gali, Nirmali, Supaul, Bihar</p>
+        <a href="https://maps.app.goo.gl/qR3qbDvkRSYq1WPu6" target="_blank" rel="noopener" style="font-size:12px;color:var(--gb);border:1px solid rgba(201,168,76,.3);padding:7px 14px;border-radius:7px;text-decoration:none">📍 Open in Google Maps (26.310858, 86.575209) →</a>
+      </div>
+    </div>
+    <div class="fbx fu">
+      <h2 class="ftit hi">संदेश भेजें</h2><h2 class="ftit en">Send a Message</h2>
+      <p class="fsub2 hi">कोई भी प्रश्न हो, हम सहायता के लिए तैयार हैं।</p><p class="fsub2 en">Have a question? We'd love to hear from you.</p>
+      <div class="fg"><label class="fl hi">आपका नाम *</label><label class="fl en">Your Name *</label><input class="fi" type="text" id="ctN" maxlength="80" autocomplete="name" placeholder="Full name / पूरा नाम"></div>
+      <div class="fg"><label class="fl hi">फोन नंबर *</label><label class="fl en">Phone *</label><input class="fi" type="tel" id="ctP" maxlength="16" inputmode="tel" autocomplete="tel" placeholder="+91 XXXXXXXXXX"></div>
+      <div class="fg"><label class="fl">Email</label><input class="fi" type="email" id="ctE" maxlength="120" autocomplete="email" placeholder="your@email.com"></div>
+      <div class="fg"><label class="fl hi">विषय *</label><label class="fl en">Subject *</label>
+        <select class="fi" id="ctS">
+          <option value="">-- Select / चुनें --</option>
+          <option>Admission Inquiry / नामांकन पूछताछ</option>
+          <option>Fee Structure / शुल्क जानकारी</option>
+          <option>Transport / परिवहन</option>
+          <option>General Inquiry / सामान्य पूछताछ</option>
+          <option>Feedback / प्रतिक्रिया</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl hi">संदेश *</label><label class="fl en">Message *</label><textarea class="fi" id="ctM" rows="4" maxlength="2000" placeholder="आपका संदेश / Your message..." style="resize:none"></textarea></div><input type="text" name="_honey" id="ctHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <button class="fsbtn" id="cbtn" onclick="submitContact(this)"><span class="hi">संदेश भेजें →</span><span class="en">Send Message →</span></button>
+      <div style="display:flex;gap:10px;margin-top:14px">
+        <a href="tel:+919006308822" class="btn bom bsm" style="flex:1;justify-content:center">📞 9006308822</a>
+        <a href="tel:+918789724803" class="btn bom bsm" style="flex:1;justify-content:center">📞 8789724803</a>
+        <a href="https://wa.me/918789724803" target="_blank" rel="noopener" class="btn bsm" style="flex:1;justify-content:center;background:#25D366;color:#fff;border:none">📲 WA</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+</div>
+
+</main>
+
+<footer>
+  <div class="con">
+    <div class="fgrid">
+      <div class="fbrand">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+          <img loading="lazy" decoding="async" src="/images/atv-nirmali-logo.webp" alt="ATV Logo" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--g)">
+          <div>
+            <div style="font-family:'Tiro Devanagari Hindi',serif;font-size:17px;color:#fff" class="hi">अनुपम तक्षशिला विद्यापीठ</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:#fff" class="en">Anupam Takshashila Vidyapith</div>
+            <div style="font-size:10px;color:var(--gb);letter-spacing:1.5px;text-transform:uppercase;opacity:.8">Nirmali · Supaul · Est. 2020</div>
+          </div>
+        </div>
+        <p class="hi" style="font-family:'Tiro Devanagari Hindi',serif">बिहार सरकार से पंजीकृत। CBSE उन्मुख। प्ले स्कूल से कक्षा VIII। IIT-IIM Mentorship Program।</p>
+        <p class="en">Bihar Govt. registered CBSE-oriented school. Play School to Class VIII. IIT-IIM mentorship. Nirmali, Supaul, Bihar.</p>
+        <div class="freg">Reg. No. 20811012024118185825 · Est. 2020 · Bihar Sarkar Manyata Prapt</div>
+      </div>
+      <div class="fc4">
+        <h4 class="hi">त्वरित लिंक</h4><h4 class="en">Quick Links</h4>
+        <a class="flink" onclick="go('home')"><span class="hi">होम</span><span class="en">Home</span></a>
+        <a class="flink" onclick="go('about')"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+        <a class="flink" onclick="go('admissions')"><span class="hi">प्रवेश 2026-27</span><span class="en">Admissions 2026-27</span></a>
+        <a class="flink" onclick="go('facilities')"><span class="hi">सुविधाएं</span><span class="en">Facilities</span></a>
+        <a class="flink" onclick="go('gallery')"><span class="hi">गैलरी</span><span class="en">Gallery</span></a>
+        <a class="flink" onclick="go('notices')"><span class="hi">सूचनाएं</span><span class="en">Notices</span></a>
+        <a class="flink" onclick="go('blog')"><span class="hi">ब्लॉग</span><span class="en">Blog</span></a>
+        <a class="flink" onclick="go('contact')"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+      </div>
+      <div class="fc4">
+        <h4 class="hi">अकादमिक</h4><h4 class="en">Academics</h4>
+        <a class="flink"><span class="hi">CBSE पाठ्यक्रम</span><span class="en">CBSE Curriculum</span></a>
+        <a class="flink"><span class="hi">डिजिटल शिक्षा</span><span class="en">Digital Learning</span></a>
+        <a class="flink"><span class="hi">नवोदय तैयारी</span><span class="en">Navodaya Prep</span></a>
+        <a class="flink"><span class="hi">सैनिक स्कूल</span><span class="en">Sainik School</span></a>
+        <a class="flink">R.K. Mission / RMS / RIMC</a>
+        <a class="flink">IIT-IIM Mentorship</a>
+        <a class="flink">Plaksha Young Makers</a>
+      </div>
+      <div class="fc4">
+        <h4 class="hi">संपर्क</h4><h4 class="en">Contact</h4>
+        <div class="fci"><span class="fciic">📍</span><span class="fcitx hi">वार्ड नं. 4, शर्मा गली, निर्मली, सुपौल, बिहार – 847452</span><span class="fcitx en">Ward No. 4, Sharma Gali, Nirmali, Supaul, Bihar – 847452</span></div>
+        <div class="fci"><span class="fciic">📞</span><span class="fcitx">+91-9006308822<br>+91-8789724803</span></div>
+        <div class="fci"><span class="fciic">✉</span><span class="fcitx">atv.nirmali@gmail.com</span></div>
+        <div class="fci"><span class="fciic">⏰</span><span class="fcitx hi">सोम–शनि: 7:30 AM – 2:00 PM</span><span class="fcitx en">Mon–Sat: 7:30 AM – 2:00 PM</span></div>
+      </div>
+    </div>
+    <div class="fbot">
+      <p class="fcopy hi">© 2025 अनुपम तक्षशिला विद्यापीठ, निर्मली। सर्वाधिकार सुरक्षित।</p>
+      <p class="fcopy en">© 2025 Anupam Takshashila Vidyapith, Nirmali. All rights reserved.</p>
+      <div class="socrow">
+        <a class="socbtn" href="https://wa.me/918789724803" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        <a class="socbtn" href="https://www.instagram.com/atv_nirmali?igsh=MWoweDV1am96ZmNxcw==" target="_blank" rel="noopener" title="Instagram">📸</a>
+        <a class="socbtn" href="https://www.instagram.com/p/DI32OHAy4PY/?utm_source=ig_web_copy_link" target="_blank" rel="noopener" title="Instagram Post">📷</a>
+        <a class="socbtn" href="https://www.facebook.com/share/1ChEcXhxNf/" target="_blank" rel="noopener" title="Facebook">📘</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/918789724803?text=ATV%20Nirmali%20Inquiry%202026-27" target="_blank" rel="noopener" title="WhatsApp">
+  💬<span class="watip hi">WhatsApp पर चैट करें</span><span class="watip en">Chat on WhatsApp</span>
+</a>
+
+
+
+<script>
+var CL='hi';
+function setLang(l){
+  CL=l;
+  document.getElementById('R').setAttribute('lang',l);
+  document.getElementById('bhi').classList.toggle('on',l==='hi');
+  document.getElementById('ben').classList.toggle('on',l==='en');
+  try{localStorage.setItem('atv_lang',l);}catch(e){}
+}
+(function(){
+  var s='hi';
+  try{s=localStorage.getItem('atv_lang')||'hi';}catch(e){}
+  setLang(s);
+})();
+function go(page){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  var t=document.getElementById('page-'+page);
+  if(t)t.classList.add('active');
+  document.querySelectorAll('.nl').forEach(function(l){
+    var oc=l.getAttribute('onclick')||'';
+    l.classList.toggle('on',oc.indexOf("'"+page+"'")>-1);
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(initFU,80);
+}
+function toggleMob(){
+  var n=document.getElementById('mobn');
+  var o=document.getElementById('mobov');
+  var b=document.getElementById('hbg');
+  var op=n.classList.toggle('open');
+  o.classList.toggle('show',op);
+  b.setAttribute('aria-expanded',op);
+  document.body.style.overflow=op?'hidden':'';
+}
+function closeMob(){
+  document.getElementById('mobn').classList.remove('open');
+  document.getElementById('mobov').classList.remove('show');
+  document.getElementById('hbg').setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').classList.toggle('sc',window.scrollY>50);
+});
+var FORM_ENDPOINT='https://formsubmit.co/ajax/atvnirmali@gmail.com';
+function fv(id){var e=document.getElementById(id);return e?e.value.trim():'';}
+function okPhone(v){return /^(\+?91[\s-]?)?[6-9]\d{9}$/.test(v.replace(/[\s-]/g,''));}
+function sendForm(data,btn,onOk){
+  var orig=btn.innerHTML;
+  btn.disabled=true;btn.innerHTML='⏳ Sending... / भेजा जा रहा है...';
+  data._template='table';data._captcha='false';
+  fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok||String(j.success)!=='true')throw new Error(j.message||('HTTP '+r.status));});})
+    .then(onOk)
+    .catch(function(){
+      btn.disabled=false;btn.innerHTML=orig;
+      alert('Sorry, message could not be sent. Please call +91-9006308822 or WhatsApp +91-8789724803.\nक्षमा करें, संदेश नहीं भेजा जा सका। कृपया कॉल या WhatsApp करें।');
+    });
+}
+function submitAdm(btn){
+  if(fv('admHp'))return;
+  var p=fv('pN'),ph=fv('ph'),cl=fv('cl'),vl=fv('vl');
+  if(!p||!ph||!cl||!vl){alert('Please fill all required fields. / कृपया सभी * fields भरें।');return;}
+  if(!okPhone(ph)){alert('Please enter a valid 10-digit mobile number. / कृपया सही 10 अंकों का मोबाइल नंबर भरें।');return;}
+  sendForm({_subject:'New Admission Inquiry — '+p+' ('+cl+')','Form':'Admission Inquiry',"Parent's Name":p,"Child's Name":fv('cN'),'Phone':ph,'Class':cl,'Village / Area':vl,'Date of Birth':fv('db'),'Query':fv('aq')},btn,function(){
+    document.getElementById('admFrm').style.display='none';
+    document.getElementById('admOk').style.display='block';
+  });
+}
+function submitContact(btn){
+  if(fv('ctHp'))return;
+  var n=fv('ctN'),ph=fv('ctP'),em=fv('ctE'),sb=fv('ctS'),m=fv('ctM');
+  if(!n||!ph||!sb||!m){alert('Please fill all required fields. / कृपया सभी * fields भरें।');return;}
+  if(!okPhone(ph)){alert('Please enter a valid 10-digit mobile number. / कृपया सही 10 अंकों का मोबाइल नंबर भरें।');return;}
+  if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){alert('Please enter a valid email. / कृपया सही ईमेल भरें।');return;}
+  var d={_subject:'New Website Message — '+sb,'Form':'Contact Message','Name':n,'Phone':ph,'Email':em,'Subject':sb,'Message':m};
+  if(em)d._replyto=em;
+  sendForm(d,btn,function(){
+    btn.innerHTML='✓ <span class="hi">संदेश भेजा गया!</span><span class="en">Message Sent!</span>';
+    btn.style.background='#2d6e2d';
+  });
+}
+function initFU(){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}}); 
+  },{threshold:0.08});
+  document.querySelectorAll('.fu:not(.vis)').forEach(function(el){obs.observe(el);});
+}
+initFU();
+window.addEventListener('resize',function(){if(window.innerWidth>768)closeMob();});
+
+
+</script>
+</body>
+</html>
